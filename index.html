@@ -3,35 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Portfolio</title>
+    <title>Digital Portfolio | Nguyễn Chí Tùng</title>
+    <!-- Nhúng file CSS độc lập -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="particles-background"></div>
-    
-    <header>
-        <div class="logo">NGUYỄN CHÍ TÙNG<span>_K70</span></div>
-        <nav>
-            <ul id="nav-links">
-                <li><a href="#" data-target="home" class="active">Trang chủ</a></li>
-                <li><a href="#" data-target="task1">Bài 1</a></li>
-                <li><a href="#" data-target="task2">Bài 2</a></li>
-                <li><a href="#" data-target="task3">Bài 3</a></li>
-                <li><a href="#" data-target="task4">Bài 4</a></li>
-                <li><a href="#" data-target="task5">Bài 5</a></li>
-                <li><a href="#" data-target="task6">Bài 6</a></li>
-                <li><a href="#" data-target="summary">Tổng kết</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main id="app-content">
-        </main>
+    <!-- THANH ĐIỀU HƯỚNG SIDEBAR (CÔNG NGHỆ TƯƠNG LAI) -->
+    <sidebar>
+        <div class="brand">NCT PORTFOLIO</div>
+        <ul class="nav-menu">
+            <li class="nav-item active" onclick="switchPage('home')">Trang chủ (Giới thiệu)</li>
+            
+            <div class="nav-group-title">Báo cáo bài tập thành phần</div>
+            <li class="nav-item" onclick="switchPage('bai1')">Bài 1: Thao tác Tệp & Thư mục</li>
+            <li class="nav-item" onclick="switchPage('bai2')">Bài 2: Tìm kiếm Học thuật</li>
+            <li class="nav-item" onclick="switchPage('bai3')">Bài 3: Kỹ nghệ Prompt AI</li>
+            <li class="nav-item" onclick="switchPage('bai4')">Bài 4: Quản lý Dự án Nhóm</li>
+            <li class="nav-item" onclick="switchPage('bai5')">Bài 5: AI & Sáng tạo Nội dung</li>
+            <li class="nav-item" onclick="switchPage('bai6')">Bài 6: Sử dụng AI có Trách nhiệm</li>
+            
+            <div class="nav-group-title">Tổng kết</div>
+            <li class="nav-item" onclick="switchPage('tongket')">Tổng kết Dự án</li>
+        </ul>
+    </sidebar>
 
-    <footer>
-        <p>© 2026 Nguyễn Chí Tùng - UET VNU. Thiết kế cho mục đích học tập.</p>
-    </footer>
+    <!-- KHU VỰC HIỂN THỊ NỘI DUNG CHÍNH (MAIN CONTENT) -->
+    <main>
+        
+        <!-- TRANG CHỦ (BƯỚC 1) -->
+        <section id="home" class="page-content active">
+            <h1>Thông tin <span>Cá nhân</span></h1>
+            <div class="card profile-header">
+                <h2>Nguyễn Chí Tùng</h2>
+                <div class="profile-meta">Sinh viên K70 ngành Kỹ thuật máy tính (CN2)</div>
+                <div class="profile-meta">Trường Đại học Công nghệ - Đại học Quốc gia Hà Nội</div>
+            </div>
+            
+            <div class="card">
+                <h2>Mục tiêu học tập</h2>
+                <p>Trở thành một <strong>Kĩ sư phần mềm</strong> chuyên nghiệp, làm chủ các công nghệ mới và xây dựng các giải pháp hệ thống tối ưu.</p>
+            </div>
 
-    <script src="app.js" type="module"></script>
+            <div class="card">
+                <h2>Mục tiêu của Portfolio</h2>
+                <p>Giới thiệu toàn diện về năng lực bản thân, kỹ năng tư duy hệ thống và đồng thời là nơi nghiêm túc báo cáo kết quả thực hiện các bài tập thực hành trong suốt quá trình nghiên cứu.</p>
+            </div>
+            <div class="footer-nav">
+                <div></div>
+                <button class="btn" onclick="switchPage('bai1')">Xem tiếp Bài 1 &rarr;</button>
+            </div>
+        </section>
+
+        <!-- BÀI 1 -->
+        <section id="bai1" class="page-content">
+            <h1>Bài 1: Thao tác cơ bản với <span>tệp tin và thư mục</span></h1>
+            <div class="card">
+                <h2>1. Cấu trúc thư mục tối ưu thiết lập</h2>
+                <p>Hệ thống phân cấp lưu trữ khoa học được triển khai trên bộ nhớ:</p>
+                <div class="folder-tree">
+                    [Ổ đĩa D: hoặc E:] (Hoặc Documents)<br>
+                    └── <span class="folder">📁 ThucHanh_NguyenVanA</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;└── <span class="folder">📁 TaiLieu</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="file">📄 GhiChuQuanTrong.txt</span> <span style="color: var(--text-muted); font-size: 0.85rem;">(Được khôi phục lại ở bước 12)</span>
+                </div>
+            </div>
+            <div class="card">
+                <h2>2. Quy tắc đặt tên tệp và thư mục tối ưu</h2>
+                <ul class="rules-list">
+                    <li class="rules-item">
+                        <div class="rules-number">1</div>
+                        <strong>Quy tắc CamelCase kết hợp dấu gạch dưới ( _ ):</strong> Tên thư mục chính <code>ThucHanh_NguyenVanA</code> và <code>TaiLieu</code> sử dụng viết hoa chữ cái đầu của mỗi từ để dễ đọc, phân tách rõ ràng giữa phần định danh mục đích và họ tên sinh viên.
+                    </li>
+                    <li class="rules-item">
+                        <div class="rules-number">2</div>
+                        <strong>Tính gợi nhớ (Descriptive Names):</strong> Tên tệp như <code>GhiChuQuanTrong.txt</code> phản ánh trực tiếp nội dung hoặc độ quan trọng của tệp tin, giúp người dùng nhận biết ngay lập tức mà không cần mở tệp.
+                    </li>
+                    <li class="rules-item">
+                        <div class="rules-number">3</div>
+                        <strong>Không sử dụng khoảng trắng và ký tự đặc biệt:</strong> Tránh các ký tự hệ thống cấm (<code>/</code>, <code>\</code>, <code>:</code>, <code>*</code>, <code>?</code>, <code>"</code>, <code>&lt;</code>, <code>&gt;</code>, <code>|</code>) và hạn chế dấu cách để đảm bảo tệp tin không bị lỗi khi làm việc trên terminal (Linux/Command Prompt) hoặc khi đồng bộ hóa mã nguồn.
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <button class="btn" onclick="switchPage('home')">&larr; Quay lại</button>
+                <button class="btn" onclick="switchPage('bai2')">Xem tiếp Bài 2 &rarr;</button>
+            </div>
+        </section>
+
+        <!-- BÀI 2 -->
+        <section id="bai2" class="page-content">
+            <h1>Bài 2: Tìm kiếm và đánh giá <span>thông tin học thuật</span></h1>
+            <div class="card">
+                <h2>1. Kết quả tìm kiếm nâng cao bằng toán tử (Google Scholar)</h2>
+                <p>Để thu hẹp phạm vi và tìm chính xác các tài liệu học thuật chất lượng cao, các chuỗi cú pháp sau đã được thực hiện:</p>
+                
+                <div style="margin-bottom: 15px;">
+                    <strong>Cú pháp 1 (Tìm kiếm bài báo về tối ưu năng lượng):</strong>
+                    <span class="code-block"><code>"ESP32" AND "energy optimization" AND (sleep OR power)</code></span>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">*Ý nghĩa: Ép buộc kết quả phải chứa chính xác cụm từ "ESP32", "energy optimization" và phải xuất hiện một trong hai từ "sleep" (chế độ ngủ) hoặc "power" (năng lượng).</p>
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <strong>Cú pháp 2 (Tìm kiếm bài báo về bảo mật phần cứng):</strong>
+                    <span class="code-block"><code>"ESP32" AND "cryptography" AND "hardware security" -"forum"</code></span>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">*Ý nghĩa: Tìm các tài liệu có cả 3 cụm từ khóa chuyên sâu về mật mã và bảo mật phần cứng của ESP32, đồng thời loại bỏ các kết quả từ các diễn đàn thảo luận ( -"forum" ).</p>
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <strong>Cú pháp 3 (Tìm kiếm sách hoặc tài liệu chuyên khảo PDF):</strong>
+                    <span class="code-block"><code>"IoT security" AND "microcontroller" filetype:pdf</code></span>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">*Ý nghĩa: Lọc riêng các tài liệu tổng quan, sách hoặc chương sách có định dạng file .pdf liên quan đến bảo mật IoT trên vi điều khiển.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>2. Bảng tổng hợp và đánh giá nguồn tin học thuật</h2>
+                <div class="table-container">
+                    <table id="academicTable">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên tài liệu / Tác giả</th>
+                                <th>Loại nguồn</th>
+                                <th>Phân tích tiêu chí đánh giá</th>
+                                <th>Độ tin cậy</th>
+                                <th>Xếp hạng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dữ liệu từ JS script.js sẽ tự động render vào đây -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <button class="btn" onclick="switchPage('bai1')">&larr; Quay lại</button>
+                <button class="btn" onclick="switchPage('bai3')">Xem tiếp Bài 3 &rarr;</button>
+            </div>
+        </section>
+
+        <!-- BÀI 3 -->
+        <section id="bai3" class="page-content">
+            <h1>Bài 3: Viết Prompt hiệu quả cho <span>các tác vụ học tập</span></h1>
+            
+            <!-- Tác vụ 1 -->
+            <div class="card">
+                <h2>TÁC VỤ 1: GIẢI THÍCH MỘT KHÁI NIỆM PHỨC TẠP</h2>
+                <p><strong>Khái niệm lựa chọn:</strong> Cơ chế bất đối xứng trong mã hóa khóa công khai (Public-key Cryptography)</p>
+                
+                <h3>Các phiên bản Prompt thử nghiệm:</h3>
+                <div style="margin: 10px 0;">
+                    <p><strong>Phiên bản 1 (Cơ bản):</strong> "Mã hóa khóa công khai là gì? Giải thích cho tôi."</p>
+                    <p><strong>Phiên bản 2 (Cải tiến - Chi tiết, có cấu trúc):</strong> "Hãy giải thích khái niệm mã hóa khóa công khai. Định dạng bài viết gồm: Định nghĩa ngắn gọn, nguyên lý hoạt động cơ bản giữa khóa công khai và khóa bí mật, và một ví dụ thực tế đời sống để minh họa."</p>
+                    <p><strong>Phiên bản 3 (Nâng cao - Role + Few-shot + Chain-of-thought):</strong></p>
+                    <div class="code-block" style="font-size: 0.85rem;">
+                        "Bạn là một giảng viên Kỹ thuật mật mã có khả năng sư phạm xuất sắc. Nhiệm vụ của bạn là giải thích cơ chế mã hóa khóa công khai cho một sinh viên năm nhất vừa bắt đầu học về mạng máy tính.<br><br>
+                        Hãy tuân thủ cấu trúc tư duy (Chain-of-thought) từng bước sau:<br>
+                        Bước 1: Sử dụng một phép ẩn dụ quen thuộc (Ví dụ: hộp thư có khe bỏ thư bên ngoài nhưng chỉ có chủ nhà giữ chìa khóa mở).<br>
+                        Bước 2: Liên hệ phép ẩn dụ đó vào thực tế kỹ thuật (Public key và Private key đóng vai trò gì?).<br>
+                        Bước 3: Phân tích từng bước luồng đi của dữ liệu từ khi gửi đến khi nhận để sinh viên thấy rõ tính bảo mật.<br><br>
+                        Yêu cầu: Ngôn ngữ trực quan, không dùng biệt ngữ toán học quá phức tạp khi chưa giải thích."
+                    </div>
+                </div>
+
+                <h3>Bảng so sánh hiệu quả đầu ra từ AI:</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tiêu chí</th>
+                                <th>Kết quả từ Prompt Cơ bản</th>
+                                <th>Kết quả từ Prompt Cải tiến</th>
+                                <th>Kết quả từ Prompt Nâng cao</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Nội dung hiển thị</strong></td>
+                                <td>Trả về định nghĩa mang tính từ điển, nặng lý thuyết, liệt kê chung chung các thuật toán như RSA, ECC.</td>
+                                <td>Có bố cục rõ ràng theo yêu cầu. Chia tách phần định nghĩa và ví dụ riêng biệt, dễ đọc hơn.</td>
+                                <td>Rất cuốn hút. Phép ẩn dụ "hộp thư ven đường" giúp hiểu ngay lập tức bản chất toán học phức tạp mà không bị ngợp.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Độ chính xác & Phù hợp</strong></td>
+                                <td>Đúng nhưng khô khan, dễ khiến người học mau quên.</td>
+                                <td>Tốt, đáp ứng vừa đủ nhu cầu tra cứu thông tin nhanh.</td>
+                                <td>Xuất sắc. Đánh trúng tâm lý sinh viên mới học, giải thích rõ luồng đi của dữ liệu theo từng bước.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Tác vụ 2 -->
+            <div class="card">
+                <h2>TÁC VỤ 2: TẠO BỘ CÂU HỎI ÔN TẬP CHO MỘT CHỦ ĐỀ</h2>
+                <p><strong>Chủ đề lựa chọn:</strong> Lập trình nhúng và Vi điều khiển (ESP32 / Nguyên lý hoạt động của GPIO)</p>
+                
+                <h3>Các phiên bản Prompt thử nghiệm:</h3>
+                <div style="margin: 10px 0;">
+                    <p><strong>Phiên bản 1 (Cơ bản):</strong> "Tạo cho tôi một vài câu hỏi trắc nghiệm về vi điều khiển ESP32 và chân GPIO."</p>
+                    <p><strong>Phiên bản 2 (Cải tiến - Chi tiết, có cấu trúc):</strong> "Hãy tạo một bộ câu hỏi ôn tập gồm 5 câu trắc nghiệm (có 4 đáp án A, B, C, D) về chủ đề cấu hình chân GPIO trên ESP32. Cuối bài hãy cung cấp đáp án chính xác."</p>
+                    <p><strong>Phiên bản 3 (Nâng cao - Role + Chain-of-thought + Output Formatting):</strong></p>
+                    <div class="code-block" style="font-size: 0.85rem;">
+                        "Bạn là một chuyên gia ra đề thi học thuật. Hãy tạo một bộ câu hỏi ôn tập chất lượng cao về 'Chế độ hoạt động của chân GPIO trên ESP32' (Input, Output, Pull-up, Pull-down, ADC/DAC). Hãy suy nghĩ kỹ về việc phân bổ độ khó theo ma trận: 2 câu nhận biết, 2 câu thông hiểu, 1 câu vận dụng thực tế mạch điện.<br>
+                        Định dạng đầu ra nghiêm ngặt bằng bảng Markdown như sau:<br>
+                        | STT | Câu hỏi | Các phương án lựa chọn (A, B, C, D) | Đáp án đúng | Giải thích chi tiết giải pháp |"
+                    </div>
+                </div>
+
+                <h3>Bảng so sánh hiệu quả đầu ra từ AI:</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tiêu chí</th>
+                                <th>Kết quả từ Prompt Cơ bản</th>
+                                <th>Kết quả từ Prompt Cải tiến</th>
+                                <th>Kết quả từ Prompt Nâng cao</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Nội dung hiển thị</strong></td>
+                                <td>Sinh ra các câu hỏi quá dễ, định dạng lộn xộn, không có đáp án hoặc đáp án lồng thẳng vào câu hỏi làm mất tính năng ôn tập.</td>
+                                <td>Có 5 câu trắc nghiệm kèm đáp án ở cuối, nhưng các câu hỏi có độ khó tương đương nhau, chưa bao phủ hết các chế độ.</td>
+                                <td>Hoàn hảo. Bảng hiển thị rất sạch sẽ. Phần 'Giải thích chi tiết' phân tích kỹ tại sao chọn đáp án đó dựa trên sơ đồ mạch điện kéo lên/kéo xuống.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Độ chính xác & Phù hợp</strong></td>
+                                <td>Thấp, không dùng để kiểm tra kiến thức sâu được.</td>
+                                <td>Trung bình, đạt yêu cầu bài tập cơ bản.</td>
+                                <td>Cao nhất. Phân loại rõ ràng từ nhận biết đến vận dụng, có thể dùng trực tiếp để ôn thi.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <button class="btn" onclick="switchPage('bai2')">&larr; Quay lại</button>
+                <button class="btn" onclick="switchPage('bai4')">Xem tiếp Bài 4 &rarr;</button>
+            </div>
+        </section>
+
+        <!-- BÀI 4 -->
+        <section id="bai4" class="page-content">
+            <h1>Bài 4: Sử dụng công cụ hợp tác trực tuyến cho <span>dự án nhóm</span></h1>
+            <div class="card">
+                <h2>Minh chứng và quy trình quản trị dự án thông qua Trello/Kanban Board</h2>
+                <p>Hệ thống phân phối và giám sát đầu việc của nhóm kỹ thuật được tối ưu hóa như sau:</p>
+                
+                <div class="table-container">
+                    <table id="trelloTable">
+                        <thead>
+                            <tr>
+                                <th>Danh mục (List)</th>
+                                <th>Nội dung công việc (Cards)</th>
+                                <th>Thành viên phụ trách</th>
+                                <th>Nhãn phân loại (Labels)</th>
+                                <th>Hạn chót (Due Date)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dữ liệu JS script.js sẽ render vào đây -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <button class="btn" onclick="switchPage('bai3')">&larr; Quay lại</button>
+                <button class="btn" onclick="switchPage('bai5')">Xem tiếp Bài 5 &rarr;</button>
+            </div>
+        </section>
+
+        <!-- BÀI 5 -->
+        <section id="bai5" class="page-content">
+            <h1>Bài 5: Sử dụng AI tạo sinh để <span>hỗ trợ sáng tạo nội dung</span></h1>
+            <div class="card">
+                <h2>Sản phẩm nội dung số hoàn thiện (AI-Generated Multimedia Portfolio Artifact)</h2>
+                <p>Dưới đây là tác phẩm truyền thông thị giác minh họa cho chủ đề <strong>"Trí tuệ nhân tạo đồng hành cùng sự phát triển của Tri thức học thuật"</strong> được định hướng thiết kế và tạo bởi AI:</p>
+                
+                <div class="ai-image-container">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80" alt="AI hỗ trợ học tập công nghệ tương lai" class="ai-image">
+                </div>
+                
+                <p style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; text-align: center;">Hình ảnh minh họa: Không gian số, nơi con người tương tác trực quan với dữ liệu lớn và thuật toán mô phỏng.</p>
+            </div>
+            <div class="footer-nav">
+                <button class="btn" onclick="switchPage('bai4')">&larr; Quay lại</button>
+                <button class="btn" onclick="switchPage('bai6')">Xem tiếp Bài 6 &rarr;</button>
+            </div>
+        </section>
+
+        <!-- BÀI 6 -->
+        <section id="bai6" class="page-content">
+            <h1>Bài 6: Sử dụng AI có <span>trách nhiệm trong học tập và nghiên cứu</span></h1>
+            <div class="card">
+                <h2>6 Nguyên tắc vàng - Kim chỉ nam đạo đức học thuật cá nhân</h2>
+                <ul class="rules-list">
+                    <li class="rules-item">
+                        <div class="rules-number">1</div>
+                        <strong>Nguyên tắc "Tư duy trước - Ra lệnh sau":</strong> Luôn tự mình suy nghĩ, tìm giải pháp và vạch ra cấu trúc bài làm ít nhất 15 phút trước khi mở bất kỳ công cụ AI nào.
+                    </li>
+                    <li class="rules-item">
+                        <div class="rules-number">2</div>
+                        <strong>Nguyên tắc "Xác thực kép" (Fact-checking):</strong> Tuyệt đối không tin tưởng hoàn toàn vào các số liệu, công thức toán học hoặc trích dẫn do AI cung cấp. Mọi thông tin quan trọng đều phải được đối chiếu lại với giáo trình hoặc bài báo khoa học gốc.
+                    </li>
+                    <li class="rules-item">
+                        <div class="rules-number">3</div>
+                        <strong>Nguyên tắc "Đầu ra của AI là nguyên liệu, không phải sản phẩm":</strong> Chỉ sử dụng kết quả của AI dưới dạng ý tưởng thô, tài liệu tham khảo sơ khởi. Mọi sản phẩm nộp bài cuối cùng phải được viết lại bằng văn phong và tư duy của chính mình.
+                    </li>
+                    <li class="rules-item">
+                        <div class="rules-number">4</div>
+                        <strong>Nguyên tắc "Minh bạch tuyệt đối":</strong> Luôn khai báo trung thực, rõ ràng các phần việc có sự can thiệp hay gợi ý từ AI trong mọi báo cáo, tiểu luận.
+                    </li>
+                    <li class="rules-item">
+                        <div class="rules-number">5</div>
+                        <strong>Nguyên tắc "Bảo mật dữ liệu học thuật":</strong> Không tải lên các tài liệu chưa công bố của giảng viên, các dự án nghiên cứu nội bộ của phòng thí nghiệm hoặc thông tin cá nhân lên các nền tảng AI công cộng.
+                    </li>
+                    <li class="rules-item">
+                        <div class="rules-number">6</div>
+                        <strong>Nguyên tắc "Dùng AI để hiểu sâu, không dùng để làm tắt":</strong> Tập trung đặt các câu hỏi dạng <em>"Tại sao dòng lệnh này chạy sai?"</em>, <em>"Cơ chế hoạt động của thuật toán này là gì?"</em> thay vì các câu hỏi mì ăn liền <em>"Hãy làm hộ tôi bài này"</em>.
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <button class="btn" onclick="switchPage('bai5')">&larr; Quay lại</button>
+                <button class="btn" onclick="switchPage('tongket')">Xem Tổng kết &rarr;</button>
+            </div>
+        </section>
+
+        <!-- TỔNG KẾT (BƯỚC 3) -->
+        <section id="tongket" class="page-content">
+            <h1>Tổng kết <span>Dự án Portfolio</span></h1>
+            <div class="card">
+                <h2>Trải nghiệm và cảm nhận cá nhân</h2>
+                <p>Quá trình xây dựng và hệ thống hóa Portfolio này là một hành trình nhìn lại cực kỳ giá trị. Nó không chỉ giúp tôi kiểm chuẩn lại các kỹ năng quản trị file hệ thống, khai thác dữ liệu học thuật chính quy từ Google Scholar, mà quan trọng hơn là định hình tư duy cộng tác và sử dụng AI một cách thông minh, có trách nhiệm đạo đức trong kỷ nguyên số.</p>
+            </div>
+            <div class="card">
+                <h2>Tiêu chuẩn thiết kế</h2>
+                <p>Hệ thống được thiết kế tối giản, áp dụng kiến trúc SPA để tối ưu hóa tốc độ tải trang, đảm bảo giao diện gọn gàng, tương thích tốt trên các thiết bị và sẵn sàng triển khai hạ tầng ảo hóa (Docker containers) bất cứ lúc nào.</p>
+            </div>
+            <div class="footer-nav">
+                <button class="btn" onclick="switchPage('bai6')">&larr; Quay lại Bài 6</button>
+                <button class="btn" onclick="switchPage('home')">Về Trang chủ</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Nhúng file Logic xử lý JavaScript độc lập -->
+    <script src="script.js"></script>
 </body>
 </html>
