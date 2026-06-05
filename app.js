@@ -32,11 +32,11 @@ const PROMPT_TASK_2 = {
 };
 
 const KANBAN_DATA = [
-    { list: "Backlog (Ý tưởng / Chuẩn bị)", cards: "- Nghiên cứu tài liệu API<br>- Thiết kế sơ đồ kiến trúc hệ thống", member: "Cả nhóm", label: "Khó / Nghiên cứu", date: "05/06/2026", badgeClass: "status-high" },
-    { list: "To Do (Cần làm)", cards: "- Thiết kế giao diện giao diện Front-end<br>- Viết báo cáo phân tích chương 1 & 2", member: "Nguyễn Văn A", label: "Trung bình", date: "08/06/2026", badgeClass: "status-med" },
-    { list: "In Progress (Đang làm)", cards: "- Cấu hình mạch vi điều khiển ESP32<br>- Lập trình chức năng phân quyền cơ sở dữ liệu", member: "Trần Văn B", label: "Ưu tiên cao", date: "06/06/2026", badgeClass: "status-high" },
-    { list: "Testing / Review (Kiểm thử)", cards: "- Đánh giá hiệu năng và đo dòng tiêu thụ năng lượng", member: "Lê Thị C", label: "Kiểm thử", date: "04/06/2026", badgeClass: "status-med" },
-    { list: "Done (Đã hoàn thành)", cards: "- Khởi tạo repository trên GitHub<br>- Viết slide thuyết trình tổng quan bài tập", member: "Cả nhóm", label: "Hoàn thành", date: "02/06/2026", badgeClass: "status-low" }
+    { list: "Backlog (Ý tưởng / Chuẩn bị)", cards: "- Nghiên cứu tài liệu API<br>- Thiết kế sơ đồ kiến trúc hệ thống", member: "Cả nhóm", label: "Khó / Nghiên cứu", date: "15/05/2026", badgeClass: "status-high" },
+    { list: "To Do (Cần làm)", cards: "- Thiết kế giao diện giao diện Front-end<br>- Viết báo cáo phân tích chương 1 & 2", member: "Nguyễn Chí Tùng", label: "Trung bình", date: "18/05/2026", badgeClass: "status-med" },
+    { list: "In Progress (Đang làm)", cards: "- Cấu hình mạch vi điều khiển ESP32<br>- Lập trình chức năng phân quyền cơ sở dữ liệu", member: "Nguyễn Thành Công", label: "Ưu tiên cao", date: "28/05/2026", badgeClass: "status-high" },
+    { list: "Testing / Review (Kiểm thử)", cards: "- Đánh giá hiệu năng và đo dòng tiêu thụ năng lượng", member: "Nguyễn Đức Việt", label: "Kiểm thử", date: "01/06/2026", badgeClass: "status-med" },
+    { list: "Done (Đã hoàn thành)", cards: "- Khởi tạo repository trên GitHub<br>- Viết slide thuyết trình tổng quan bài tập", member: "Cả nhóm", label: "Hoàn thành", date: "05/06/2026", badgeClass: "status-low" }
 ];
 
 const PRINCIPLES_DATA = [
