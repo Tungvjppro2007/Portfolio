@@ -3,198 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Portfolio | Nguyễn Chí Tùng</title>
+    <title>Digital Portfolio - Nguyễn Chí Tùng</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Font chữ công nghệ -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Thanh điều hướng (Sidebar) -->
-    <nav class="sidebar">
-        <div class="logo">
-            <h2>NCT<span>.IO</span></h2>
+    <button class="mobile-menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <h2>PORTFOLIO<span>.IO</span></h2>
         </div>
         <ul class="nav-links">
-            <li><a href="#" class="nav-btn active" data-target="home">Giới thiệu</a></li>
+            <li><a href="#" class="nav-btn active" data-target="buoc1">Giới thiệu bản thân</a></li>
             <li><a href="#" class="nav-btn" data-target="bai1">Bài 1: Cấu trúc & Đặt tên</a></li>
             <li><a href="#" class="nav-btn" data-target="bai2">Bài 2: Tìm kiếm học thuật</a></li>
             <li><a href="#" class="nav-btn" data-target="bai3">Bài 3: Kỹ nghệ Prompt</a></li>
             <li><a href="#" class="nav-btn" data-target="bai4">Bài 4: Quản lý nhóm</a></li>
             <li><a href="#" class="nav-btn" data-target="bai5">Bài 5: AI & Sáng tạo</a></li>
-            <li><a href="#" class="nav-btn" data-target="bai6">Bài 6: Nguyên tắc AI</a></li>
-            <li><a href="#" class="nav-btn" data-target="summary">Tổng kết Portfolio</a></li>
+            <li><a href="#" class="nav-btn" data-target="bai6">Bài 6: Quy trình AI</a></li>
+            <li><a href="#" class="nav-btn" data-target="buoc3">Bước 3: Tổng kết & Đánh giá</a></li>
         </ul>
     </nav>
 
-    <!-- Khu vực nội dung chính -->
-    <main class="content-area">
+    <main class="main-content">
         
-        <!-- TRANG CHỦ / BƯỚC 1 -->
-        <section id="home" class="portfolio-section active">
-            <div class="hero-container">
-                <div class="glitch-title">DIGITAL PORTFOLIO</div>
-                <div class="profile-card">
-                    <h3>Thông tin sinh viên</h3>
+        <section id="buoc1" class="portfolio-section active">
+            <h1 class="section-title">Thông Tin Sinh Viên</h1>
+            <div class="card profile-container">
+                <div class="profile-info">
                     <p><strong>Họ và tên:</strong> Nguyễn Chí Tùng</p>
-                    <p><strong>Mã lớp/Khóa:</strong> Sinh viên K70 - Ngành Kỹ thuật máy tính (CN2)</p>
-                    <p><strong>Trường:</strong> Đại học Công nghệ - Đại học Quốc gia Hà Nội</p>
-                    <p><strong>Mục tiêu học tập:</strong> Trở thành kỹ sư phần mềm chuyên nghiệp</p>
-                    <p><strong>Mục tiêu của portfolio:</strong> Giới thiệu bản thân và báo cáo chi tiết kết quả thực hiện các bài tập học phần.</p>
+                    <p><strong>Định danh:</strong> Sinh viên K70 ngành kỹ thuật máy tính (CN2) trường đại học công nghệ - đại học quốc gia Hà Nội</p>
+                    <p><strong>Mục tiêu học tập:</strong> Trở thành kĩ sư phần mềm</p>
+                    <p><strong>Mục tiêu của portfolio:</strong> Giới thiệu bản thân + báo cáo kết quả bài tập</p>
                 </div>
             </div>
         </section>
 
-        <!-- BÀI 1 -->
         <section id="bai1" class="portfolio-section">
-            <h2>Bài 1: Thư mục & Quy tắc đặt tên tối ưu</h2>
+            <h1 class="section-title">Bài 1: Thiết Lập Hệ Thống Lưu Trữ</h1>
+            
             <div class="card">
-                <h3>Cấu trúc thư mục thiết lập thực tế</h3>
-                <pre class="code-block">
-[Ổ đĩa D: hoặc E:] (Hoặc Documents)
-└── 📁 ThucHanh_NguyenVanA
-    └── 📁 TaiLieu
-        └── 📄 GhiChuQuanTrong.txt (Được khôi phục lại ở bước 12)
-                </pre>
+                <h3 class="card-subtitle">1. Cấu trúc thư mục thiết lập thực tế</h3>
+                <div class="folder-structure">
+                    <div class="folder-item root">📁 ThucHanh_NguyenChitung</div>
+                    <div class="folder-item child">└── 📁 TaiLieu</div>
+                    <div class="folder-item grandchild">└── 📄 GhiChuQuanTrong.txt</div>
+                </div>
             </div>
+
             <div class="card">
-                <h3>Quy tắc đặt tên tệp và thư mục tối ưu</h3>
-                <ul class="tech-list">
-                    <li><strong>Quy tắc CamelCase kết hợp dấu gạch dưới ( _ ):</strong> Tên thư mục chính <code>ThucHanh_NguyenVanA</code> và <code>TaiLieu</code> sử dụng viết hoa chữ cái đầu của mỗi từ để dễ đọc, phân tách rõ ràng giữa phần định danh mục đích và họ tên sinh viên.</li>
-                    <li><strong>Tính gợi nhớ (Descriptive Names):</strong> Tên tệp như <code>GhiChuQuanTrong.txt</code> phản ánh trực tiếp nội dung hoặc độ quan trọng của tệp tin, giúp người dùng nhận biết ngay lập tức mà không cần mở tệp.</li>
-                    <li><strong>Không sử dụng khoảng trắng và ký tự đặc biệt:</strong> Tránh các ký tự hệ thống cấm như <code>/ \ : * ? " < > |</code> và hạn chế dấu cách để đảm bảo tệp tin không bị lỗi khi làm việc trên terminal (Linux/Command Prompt) hoặc khi đồng bộ hóa mã nguồn.</li>
+                <h3 class="card-subtitle">2. Quy tắc đặt tên tệp và thư mục tối ưu</h3>
+                <ul class="info-list">
+                    <li><strong>Nguyên tắc CamelCase (Viết hoa chữ cái đầu):</strong> Áp dụng cấu trúc viết hoa từng cụm từ cốt lõi như <code>ThucHanh</code>, <code>TaiLieu</code>, <code>GhiChuQuanTrong</code> giúp lập trình viên và hệ thống nhận diện từ ngữ nhanh chóng, tăng tốc độ đọc mã nguồn và quản lý tệp tin.</li>
+                    <li><strong>Sử dụng dấu gạch dưới (_) để phân tách ngữ cảnh:</strong> Kết hợp giữa nhóm tác vụ và tên riêng sinh viên <code>ThucHanh_NguyenChitung</code> nhằm định danh duy nhất, tránh trùng lặp dữ liệu trên các máy chủ lưu trữ hoặc khi đẩy lên các kho mã nguồn đám mây.</li>
+                    <li><strong>Tính gợi nhớ trực quan (Descriptive Name):</strong> Tên tệp tin phản ánh chính xác 100% mục đích sử dụng bên trong (ví dụ: <code>GhiChuQuanTrong.txt</code>), hạn chế tối đa việc đặt tên mơ hồ như "New Folder", "Document1", "abc.txt".</li>
+                    <li><strong>Loại bỏ khoảng trắng và ký tự tiếng Việt có dấu:</strong> Giúp tệp tin vận hành an toàn tuyệt đối trên mọi nền tảng hệ điều hành (Windows, Linux, macOS) và không bị lỗi đường dẫn (URL Encoding %20) khi chạy trong môi trường container (Docker/Kubernetes).</li>
                 </ul>
             </div>
         </section>
 
-        <!-- BÀI 2 -->
         <section id="bai2" class="portfolio-section">
-            <h2>Bài 2: Tìm kiếm & Đánh giá nguồn tin học thuật</h2>
-            <div class="card">
-                <h3>Cú pháp toán tử nâng cao trên Google Scholar / CSDL khoa học</h3>
-                
-                <div class="sub-card">
-                    <h4>Cú pháp 1: Tìm kiếm bài báo về tối ưu năng lượng</h4>
-                    <p class="syntax"><code>"ESP32" AND "energy optimization" AND (sleep OR power)</code></p>
-                    <p><em>Ý nghĩa:</em> Ép buộc kết quả phải chứa chính xác cụm từ "ESP32", "energy optimization" và phải xuất hiện một trong hai từ "sleep" (chế độ ngủ) hoặc "power" (năng lượng).</p>
-                </div>
-
-                <div class="sub-card">
-                    <h4>Cú pháp 2: Tìm kiếm bài báo về bảo mật phần cứng</h4>
-                    <p class="syntax"><code>"ESP32" AND "cryptography" AND "hardware security" - "forum"</code></p>
-                    <p><em>Ý nghĩa:</em> Tìm các tài liệu có cả 3 cụm từ khóa chuyên sâu về mật mã và bảo mật phần cứng của ESP32, đồng thời loại bỏ các kết quả từ các diễn đàn thảo luận (loại trừ "-forum").</p>
-                </div>
-
-                <div class="sub-card">
-                    <h4>Cú pháp 3: Tìm kiếm sách hoặc tài liệu định dạng PDF chuyên khảo</h4>
-                    <p class="syntax"><code>"IoT security" AND "microcontroller" filetype:pdf</code></p>
-                    <p><em>Ý nghĩa:</em> Lọc riêng các tài liệu tổng quan, sách hoặc chương sách có định dạng file <code>.pdf</code> liên quan đến bảo mật IoT trên vi điều khiển.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>Bảng tổng hợp và đánh giá nguồn tin khoa học (2024 - 2025)</h3>
-                <div class="table-container">
-                    <table class="tech-table" id="table-academic">
-                        <!-- Dữ liệu được load tự động từ JavaScript để tăng hiệu năng và chính xác -->
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!-- BÀI 3 -->
-        <section id="bai3" class="portfolio-section">
-            <h2>Bài 3: Việc thực hiện các Kỹ nghệ Prompt (Prompt Engineering)</h2>
+            <h1 class="section-title">Bài 2: Tìm Kiếm & Đánh Giá Nguồn Tin Học Thuật</h1>
             
             <div class="card">
-                <h3>Tác vụ 1: Giải thích một khái niệm phức tạp (Cơ chế bất đối xứng trong mã hóa khóa công khai)</h3>
-                <div class="table-container">
-                    <table class="tech-table" id="table-prompt1"></table>
+                <h3 class="card-subtitle">1. Kết quả tìm kiếm học thuật bằng các toán tử nâng cao</h3>
+                <div class="syntax-box">
+                    <p><strong>Cú pháp toán tử 1 (Tìm kiếm chính xác cụm từ chuyên ngành):</strong></p>
+                    <code>"IoT architecture" AND "threat mitigation" AND "2025"</code>
+                    <p class="syntax-desc"><em>Ý nghĩa kịch bản:</em> Ép buộc bộ máy tìm kiếm của Google Scholar lọc ra các tài liệu khoa học chứa đồng thời cụm từ chính xác về kiến trúc IoT, các phương pháp giảm thiểu mối đe dọa và phải cập nhật mới nhất vào năm 2025.</p>
+                </div>
+                <div class="syntax-box">
+                    <p><strong>Cú pháp toán tử 2 (Lọc định dạng tài liệu kết hợp loại trừ nguồn):</strong></p>
+                    <code>"software engineering challenges" AND "ML/DL" filetype:pdf -site:wikipedia.org</code>
+                    <p class="syntax-desc"><em>Ý nghĩa kịch bản:</em> Tìm kiếm các thách thức trong kỹ nghệ phần mềm khi tích hợp học máy/học sâu dưới định dạng file PDF học thuật, đồng thời loại bỏ các bài viết bách khoa toàn thư mở không qua bình duyệt từ Wikipedia.</p>
                 </div>
             </div>
 
             <div class="card">
-                <h3>Tác vụ 2: Tạo bộ câu hỏi ôn tập cho một chủ đề (Lập trình và Vi điều khiển ESP32/GPIO)</h3>
-                <div class="table-container">
-                    <table class="tech-table" id="table-prompt2"></table>
+                <h3 class="card-subtitle">2. Bảng tổng hợp và đánh giá nguồn tin đã thực hiện</h3>
+                <div class="table-responsive">
+                    <table class="data-table" id="academicTable">
+                        </table>
                 </div>
             </div>
         </section>
 
-        <!-- BÀI 4 -->
+        <section id="bai3" class="portfolio-section">
+            <h1 class="section-title">Bài 3: Áp Dụng Kỹ Nghệ Prompt Engineering</h1>
+            
+            <div class="card">
+                <h3 class="card-subtitle">Tác vụ 1: Giải thích một khái niệm phức tạp</h3>
+                <div class="table-responsive">
+                    <table class="data-table" id="promptTable1">
+                        </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-subtitle">Tác vụ 2: Tạo bộ câu hỏi ôn tập cho một chủ đề</h3>
+                <div class="table-responsive">
+                    <table class="data-table" id="promptTable2">
+                        </table>
+                </div>
+            </div>
+        </section>
+
         <section id="bai4" class="portfolio-section">
-            <h2>Bài 4: Quản lý và Điều phối dự án nhóm</h2>
+            <h1 class="section-title">Bài 4: Quản Lý Và Điều Phối Nhóm (Kanban)</h1>
             <div class="card">
-                <h3>Minh chứng sử dụng công cụ quản lý Kanban trực quan</h3>
-                <div class="table-container">
-                    <table class="tech-table" id="table-trello"></table>
+                <h3 class="card-subtitle">Minh chứng về việc sử dụng công cụ quản lý nhóm trực quan</h3>
+                <div class="table-responsive">
+                    <table class="data-table" id="kanbanTable">
+                        </table>
                 </div>
             </div>
         </section>
 
-        <!-- BÀI 5 -->
         <section id="bai5" class="portfolio-section">
-            <h2>Bài 5: Ứng dụng AI hỗ trợ sáng tạo nội dung</h2>
-            <div class="card text-center">
-                <h3>Sản phẩm nghệ thuật: AI hỗ trợ học tập và Nghiên cứu Công nghệ</h3>
-                <div class="image-wrapper">
-                    <!-- Ảnh được render trực tiếp từ nguồn stock học thuật uy tín -->
-                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="AI-Assisted Learning Representation" class="portfolio-img">
+            <h1 class="section-title">Bài 5: AI Hỗ Trợ Sáng Tạo Nội Dung</h1>
+            <div class="card center-content">
+                <h3 class="card-subtitle">Sản phẩm nghệ thuật số: Mô hình AI hỗ trợ học tập và nghiên cứu</h3>
+                <div class="image-frame">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1000&q=80" alt="Mô hình AI hỗ trợ học tập">
                 </div>
-                <p class="img-caption"><em>Hình ảnh minh họa: Sự giao thoa giữa Trí tuệ nhân tạo (AI Engine) và tư duy đa chiều của người kỹ sư phần mềm tương lai.</em></p>
+                <p class="image-caption">Hình ảnh minh họa: Sự mô phỏng mạng lưới thần kinh nhân tạo đồng hành cùng tư duy nghiên cứu khoa học công nghệ của sinh viên kỹ thuật.</p>
             </div>
         </section>
 
-        <!-- BÀI 6 -->
         <section id="bai6" class="portfolio-section">
-            <h2>Bài 6: Quy trình và Nguyên tắc làm việc với Trí tuệ nhân tạo (AI)</h2>
+            <h1 class="section-title">Bài 6: Nguyên Tắc Làm Việc Với Trí Tuệ Nhân Tạo</h1>
             <div class="card">
-                <h3>6 Nguyên tắc vàng cốt lõi của sinh viên công nghệ</h3>
-                <div class="principles-grid">
-                    <div class="p-box">
-                        <div class="p-num">1</div>
-                        <h4>Tư duy trước - Ra lệnh sau</h4>
-                        <p>Luôn tự mình suy nghĩ, tìm giải pháp và vạch ra cấu trúc bài làm ít nhất 15 phút trước khi mở bất kỳ công cụ AI nào.</p>
+                <div class="principles-container" id="principlesGrid">
                     </div>
-                    <div class="p-box">
-                        <div class="p-num">2</div>
-                        <h4>Xác thực kép (Fact-checking)</h4>
-                        <p>Tuyệt đối không tin tưởng hoàn toàn vào xác suất từ AI. Mọi thông tin quan trọng đều phải đối chiếu với tài liệu gốc hoặc bài báo khoa học.</p>
-                    </div>
-                    <div class="p-box">
-                        <div class="p-num">3</div>
-                        <h4>Đầu ra của AI là nguyên liệu, không phải sản phẩm</h4>
-                        <p>Chỉ sử dụng kết quả của AI dưới dạng ý tưởng thô, tài liệu tham khảo sơ khởi. Mọi sản phẩm nộp cuối cùng phải do chính mình viết bằng văn phong độc lập.</p>
-                    </div>
-                    <div class="p-box">
-                        <div class="p-num">4</div>
-                        <h4>Minh bạch tuyệt đối</h4>
-                        <p>Luôn khai báo trung thực, rõ ràng các phần việc có sự can thiệp hoặc gợi ý từ AI trong mọi báo cáo, tiểu luận học thuật.</p>
-                    </div>
-                    <div class="p-box">
-                        <div class="p-num">5</div>
-                        <h4>Bảo mật mật mã và dữ liệu học thuật</h4>
-                        <p>Không tải lên các tài sản trí tuệ chưa công bố, các thuật toán bảo mật nội bộ hoặc mã nguồn nhạy cảm lên các máy chủ AI công cộng.</p>
-                    </div>
-                    <div class="p-box">
-                        <div class="p-num">6</div>
-                        <h4>Đặt câu hỏi để hiểu sâu, không dùng để "làm tắt"</h4>
-                        <p>Tập trung đặt các câu hỏi dạng: "Tại sao đoạn lệnh này sai?", "Cơ chế hoạt động của thuật toán này là gì?" thay vì "Hãy làm hộ tôi bài này".</p>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <!-- BƯỚC 3: TỔNG KẾT PORTFOLIO -->
-        <section id="summary" class="portfolio-section">
-            <h2>Bước 3: Tổng kết & Đánh giá Portfolio cá nhân</h2>
-            <div class="card">
-                <h3>Trải nghiệm học tập và thực hành</h3>
-                <p>Quá trình xây dựng Digital Portfolio này không chỉ là một bài báo cáo kết quả bài tập đơn thuần, mà còn là một trải nghiệm giúp tối ưu hóa phương pháp học tập tư duy của một kỹ sư phần mềm tương lai[cite: 1]. Việc kết hợp nhuần nhuyễn giữa kỹ năng thiết lập hệ thống, khai thác tri thức học thuật chính xác và phối hợp thông minh với các mô hình AI thế hệ mới đã đặt nền móng vững chắc cho các đề tài nghiên cứu chuyên sâu tiếp theo.</p>
+        <section id="buoc3" class="portfolio-section">
+            <h1 class="section-title">Bước 3: Tổng Kết & Đánh Giá Portfolio</h1>
+            
+            <div class="card summary-box">
+                <h3 class="card-subtitle">1. Trải nghiệm học tập và thực hành</h3>
+                <p class="summary-text">Quá trình hoàn thiện Digital Portfolio giúp tối ưu hóa tư duy hệ thống từ khâu tổ chức lưu trữ dữ liệu cục bộ cho đến việc khai phá tri thức khoa học nâng cao trên không gian số. Việc làm quen với kỹ nghệ thiết lập câu lệnh (Prompt Engineering) theo các cấp độ giúp nâng cao năng lực tương tác với các hệ thống AI thế hệ mới, biến AI thành trợ lý đắc lực đồng hành cùng chuyên ngành Kỹ thuật máy tính một cách có định hướng, có chiều sâu khoa học.</p>
             </div>
-            <div class="card">
-                <h3>Cam kết chuẩn mực học thuật</h3>
-                <p>Toàn bộ dữ liệu hiển thị trên Portfolio cam kết tuân thủ chính xác theo các nguồn minh chứng thực tế, không tự bịa đặt thông tin, sẵn sàng phục vụ cho việc kiểm tra cấu trúc mã nguồn, đối chiếu dữ liệu khoa học nghiêm túc.</p>
+
+            <div class="card summary-box">
+                <h3 class="card-subtitle">2. Cam kết chuẩn mực học thuật và tính trung thực</h3>
+                <p class="summary-text">Toàn bộ thông tin, bảng biểu tổng hợp nguồn tin học thuật, báo cáo phân tích prompt, và minh chứng quản trị dự án nhóm hiển thị trên hệ thống Digital Portfolio này đều được trích xuất chính xác, minh bạch từ quá trình làm việc thực tế. Cam kết các nguồn tài liệu khoa học đều có cơ quan xuất bản, tác giả rõ ràng, tuyệt đối không sử dụng thông tin giả mạo, không bịa đặt hay làm sai lệch dữ liệu minh chứng.</p>
             </div>
         </section>
 
