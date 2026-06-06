@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Chí Tùng</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cyber-grid"></div>
+
+    <nav class="navbar">
+        <div class="logo">Nguyễn Chí Tùng</div>
+        <button class="menu-toggle" id="menuToggle">⚡ MENU</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#" class="nav-item active" data-target="home">GIỚI THIỆU</a></li>
+            <li><a href="#" class="nav-item" data-target="bai1">BÀI 1: FILE & FOLDER</a></li>
+            <li><a href="#" class="nav-item" data-target="bai2">BÀI 2: SEARCH SCHOLAR</a></li>
+            <li><a href="#" class="nav-item" data-target="bai3">BÀI 3: AI PROMPT</a></li>
+            <li><a href="#" class="nav-item" data-target="bai4">BÀI 4: TRELLO MANAGEMENT</a></li>
+            <li><a href="#" class="nav-item" data-target="bai5">BÀI 5: AI CREATIVE</a></li>
+            <li><a href="#" class="nav-item" data-target="bai6">BÀI 6: AI ETHICS</a></li>
+            <li><a href="#" class="nav-item" data-target="bước3">TỔNG KẾT</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+
+        <section id="home" class="portfolio-section active">
+            <div class="cyber-card">
+                <h2 class="neon-text">SYSTEM_INIT //TỔNG QUAN</h2>
+                <hr class="cyber-hr">
+                <div class="profile-container">
+                    <div class="avatar-box">
+                        <div class="avatar-placeholder">NCT</div>
+                    </div>
+                    <div class="profile-info">
+                        <p><strong>Họ và tên:</strong> <span class="highlight-text">Nguyễn Chí Tùng</span></p>
+                        <p><strong>Sinh viên:</strong> Sinh viên K70 ngành Kỹ thuật Máy tính (CN2) - Trường Đại học Công nghệ - Đại học Quốc gia Hà Nội</p>
+                        <p><strong>Mục tiêu học tập:</strong> Trở thành kĩ sư phần mềm.</p>
+                        <p><strong>Mục tiêu của Portfolio:</strong> Giới thiệu bản thân và báo cáo bài tập thực hành.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bai1" class="portfolio-section">
+            <div class="cyber-card">
+                <h2 class="neon-text">BÀI 1: THAO TÁC CƠ BẢN VỚI TỆP TIN VÀ THƯ MỤC</h2>
+                <hr class="cyber-hr">
+                <h3>1. Cấu trúc thư mục tối ưu đã thiết lập</h3>
+                <div class="folder-tree">
+                    <p>📂 [Ổ đĩa D: hoặc E:] (Hoặc Documents)</p>
+                    <p class="tree-level-1">┗━ 📂 ThucHanh_NguyenChiTung</p>
+                    <p class="tree-level-2">┗━ 📂 TaiLieu</p>
+                    <p class="tree-level-3">┗━ 📄 GhiChuQuanTrong.txt</p>
+                </div>
+
+                <h3>2. Quy tắc đặt tên tệp và thư mục cốt lõi</h3>
+                <ul class="cyber-list">
+                    <li><strong>Quy tắc CamelCase kết hợp dấu gạch dưới ( _ ):</strong> Tên thư mục chính <code>ThucHanh_NguyenChiTung</code> và <code>TaiLieu</code> sử dụng viết hoa chữ cái đầu của mỗi từ để dễ đọc, phân tách rõ ràng giữa phần định danh mục đích và họ tên sinh viên.</li>
+                    <li><strong>Tính gợi nhớ (Descriptive Names):</strong> Tên tệp như <code>GhiChuQuanTrong.txt</code> phản ánh trực tiếp nội dung hoặc độ quan trọng của tệp tin, giúp người dùng nhận biết ngay lập tức mà không cần mở tệp.</li>
+                    <li><strong>Không sử dụng khoảng trắng và ký tự đặc biệt:</strong> Tránh các ký tự hệ thống cấm ( <code>/</code>, <code>\</code>, <code>:</code>, <code>*</code>, <code>?</code>, <code>"</code>, <code>&lt;</code>, <code>&gt;</code>, <code>|</code> ) và hạn chế dấu cách để đảm bảo tệp tin không bị lỗi khi làm việc trên terminal (Linux/Command Prompt) hoặc khi đồng bộ hóa mã nguồn.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="bai2" class="portfolio-section">
+            <div class="cyber-card">
+                <h2 class="neon-text">BÀI 2: TÌM KIẾM VÀ ĐÁNH GIÁ THÔNG TIN HỌC THUẬT</h2>
+                <hr class="cyber-hr">
+                <h3>1. Kết quả tìm kiếm nâng cao trên Google Scholar / CSDL Khoa học</h3>
+                <div class="syntax-box">
+                    <p><strong>Cú pháp 1:</strong> <code>"ESP32" AND "energy optimization" AND (sleep OR power)</code></p>
+                    <p class="sub-text"><em>Ý nghĩa:</em> Ép buộc kết quả phải chứa chính xác cụm từ "ESP32", "energy optimization" và phải xuất hiện một trong hai từ "sleep" (chế độ ngủ) hoặc "power" (năng lượng).</p>
+                </div>
+                <div class="syntax-box">
+                    <p><strong>Cú pháp 2:</strong> <code>"ESP32" AND "cryptography" AND "hardware security" -"forum"</code></p>
+                    <p class="sub-text"><em>Ý nghĩa:</em> Tìm các tài liệu có cả 3 cụm từ khóa chuyên sâu về mật mã và bảo mật phần cứng của ESP32, đồng thời loại bỏ các kết quả từ các diễn đàn thảo luận ( <code>-"forum"</code> ).</p>
+                </div>
+                <div class="syntax-box">
+                    <p><strong>Cú pháp 3:</strong> <code>"IoT security" AND "microcontroller" filetype:pdf</code></p>
+                    <p class="sub-text"><em>Ý nghĩa:</em> Lọc riêng các tài liệu tổng quan, sách hoặc chương sách có định dạng file <code>.pdf</code> liên quan đến bảo mật IoT trên vi điều khiển.</p>
+                </div>
+
+                <h3>2. Bảng tổng hợp và đánh giá nguồn tin học thuật</h3>
+                <div class="table-responsive">
+                    <table class="cyber-table">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên tài liệu / Tác giả / Năm</th>
+                                <th>Loại nguồn</th>
+                                <th>Cơ quan xuất bản / Lưu trữ</th>
+                                <th>Phương pháp nghiên cứu</th>
+                                <th>Đánh giá độ tin cậy & Xếp hạng</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scholarTableBody">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="bai3" class="portfolio-section">
+            <div class="cyber-card">
+                <h2 class="neon-text">BÀI 3: VIẾT PROMPT HIỆU QUẢ CHO CÁC TÁC VỤ HỌC TẬP</h2>
+                <hr class="cyber-hr">
+                
+                <div class="task-container">
+                    <h3>TÁC VỤ 1: GIẢI THÍCH MỘT KHÁI NIỆM PHỨC TẠP</h3>
+                    <p><em>Khái niệm lựa chọn:</em> <strong>Cơ chế bất đối xứng trong mã hóa khóa công khai (Public-key Cryptography)</strong></p>
+                    
+                    <button class="accordion">Xem các phiên bản Prompt thử nghiệm</button>
+                    <div class="panel">
+                        <ul>
+                            <li><strong>Phiên bản 1 (Cơ bản):</strong> "Mã hóa khóa công khai là gì? Giải thích cho tôi."</li>
+                            <li><strong>Phiên bản 2 (Cải tiến - Chi tiết, có cấu trúc):</strong> "Hãy giải thích khái niệm mã hóa khóa công khai. Định dạng bài viết gồm: Định nghĩa ngắn gọn, nguyên lý hoạt động cơ bản giữa khóa công khai và khóa bí mật, và một ví dụ thực tế đời sống để minh họa."</li>
+                            <li><strong>Phiên bản 3 (Nâng cao - Role prompting + Few-shot + Chain-of-thought):</strong> "Bạn là một giảng viên Kỹ thuật mật mã có khả năng sư phạm xuất sắc. Nhiệm vụ của bạn là giải thích cơ chế mã hóa khóa công khai cho một sinh viên năm nhất vừa bắt đầu học về mạng máy tính. Hãy tuân thủ cấu trúc tư duy (Chain-of-thought) từng bước sau: Bước 1... [rút gọn theo ảnh gốc]"</li>
+                        </ul>
+                    </div>
+
+                    <table class="cyber-table small-table">
+                        <thead>
+                            <tr>
+                                <th>Tiêu chí</th>
+                                <th>Prompt Cơ bản</th>
+                                <th>Prompt Cải tiến</th>
+                                <th>Prompt Nâng cao</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Nội dung</strong></td>
+                                <td>Trả về định nghĩa mang tính từ điển, nặng lý thuyết, liệt kê chung chung các thuật toán như RSA, ECC.</td>
+                                <td>Có bố cục rõ ràng theo yêu cầu. Chia tách phần định nghĩa và ví dụ riêng biệt, dễ đọc hơn.</td>
+                                <td>Rất cuốn hút. Phép ẩn dụ "hộp thư ven đường" giúp hiểu ngay lập tức bản chất toán học phức tạp mà không bị ngợp.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Độ chính xác</strong></td>
+                                <td>Đúng nhưng khô khan, dễ khiến người học mau quên.</td>
+                                <td>Tốt, đáp ứng vừa đủ nhu cầu tra cứu thông tin nhanh.</td>
+                                <td>Xuất sắc. Đánh trúng tâm lý sinh viên mới học, giải thích rõ luồng đi của dữ liệu theo từng bước.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="task-container" style="margin-top: 30px;">
+                    <h3>TÁC VỤ 2: TẠO BỘ CÂU HỎI ÔN TẬP CHO MỘT CHỦ ĐỀ</h3>
+                    <p><em>Chủ đề lựa chọn:</em> <strong>Lập trình nhúng và Vi điều khiển (ESP32 / Nguyên lý hoạt động của GPIO)</strong></p>
+                    
+                    <button class="accordion">Xem các phiên bản Prompt thử nghiệm</button>
+                    <div class="panel">
+                        <ul>
+                            <li><strong>Phiên bản 1 (Cơ bản):</strong> "Tạo cho tôi một vài câu hỏi trắc nghiệm về vi điều khiển ESP32 và chân GPIO."</li>
+                            <li><strong>Phiên bản 2 (Cải tiến - Chi tiết, có cấu trúc):</strong> "Hãy tạo một bộ câu hỏi ôn tập gồm 5 câu trắc nghiệm (có 4 đáp án A, B, C, D) về chủ đề cấu hình chân GPIO trên ESP32. Cuối bài hãy cung cấp đáp án chính xác."</li>
+                            <li><strong>Phiên bản 3 (Nâng cao):</strong> "Bạn là một chuyên gia ra đề thi học thuật. Hãy tạo một bộ câu hỏi ôn tập chất lượng cao về 'Chế độ hoạt động của chân GPIO trên ESP32' (Input, Output, Pull-up, Pull-down, ADC/DAC)... Định dạng đầu ra nghiêm ngặt bằng bảng Markdown..."</li>
+                        </ul>
+                    </div>
+
+                    <table class="cyber-table small-table">
+                        <thead>
+                            <tr>
+                                <th>Tiêu chí</th>
+                                <th>Prompt Cơ bản</th>
+                                <th>Prompt Cải tiến</th>
+                                <th>Prompt Nâng cao</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Nội dung</strong></td>
+                                <td>Sinh ra các câu hỏi quá dễ, định dạng lộn xộn, không có đáp án hoặc đáp án lồng thẳng vào câu hỏi.</td>
+                                <td>Có 5 câu trắc nghiệm kèm đáp án ở cuối, nhưng các câu hỏi có độ khó tương đương nhau, chưa bao phủ hết.</td>
+                                <td>Hoàn hảo. Bảng hiển thị rất sạch sẽ. Phần 'Giải thích chi tiết' phân tích kỹ tại sao chọn đáp án đó dựa trên sơ đồ mạch điện.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Độ chính xác</strong></td>
+                                <td>Thấp, không dùng để kiểm tra kiến thức sâu được.</td>
+                                <td>Trung bình, đạt yêu cầu bài tập cơ bản.</td>
+                                <td>Cao nhất. Phân loại rõ ràng từ nhận biết đến vận dụng, có thể dùng trực tiếp để ôn thi.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="bai4" class="portfolio-section">
+            <div class="cyber-card">
+                <h2 class="neon-text">BÀI 4: SỬ DỤNG CÔNG CỤ HỢP TÁC TRỰC TUYẾN CHO DỰ ÁN NHÓM</h2>
+                <hr class="cyber-hr">
+                <h3>Minh chứng quản lý tiến độ dự án kỹ thuật (Mô phỏng mô hình Trello/Kanban Board)</h3>
+                
+                <div class="table-responsive">
+                    <table class="cyber-table">
+                        <thead>
+                            <tr>
+                                <th>Danh mục (List)</th>
+                                <th>Nội dung công việc (Cards)</th>
+                                <th>Thành viên phụ trách</th>
+                                <th>Nhãn phân loại (Labels)</th>
+                                <th>Hạn chót (Due Date)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trelloTableBody">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="bai5" class="portfolio-section">
+            <div class="cyber-card">
+                <h2 class="neon-text">BÀI 5: SỬ DỤNG AI TẠO SINH ĐỂ HỖ TRỢ SÁNG TẠO NỘI DUNG</h2>
+                <hr class="cyber-hr">
+                <h3>Sản phẩm đồ họa nghệ thuật số được hỗ trợ bởi AI</h3>
+                <p>Chủ đề: <em>Sự giao thoa giữa Trí tuệ nhân tạo (AI) và Sinh viên Công nghệ trong kỷ nguyên số</em></p>
+                
+                <div class="image-showcase">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="AI hỗ trợ học tập công nghệ tương lai" class="cyber-img">
+                    <div class="img-caption">[Ảnh sinh bởi AI] - Futuristic Workspace nơi AI đóng vai trò phân tích kiến trúc vi mạch hỗ trợ kỹ sư.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bai6" class="portfolio-section">
+            <div class="cyber-card">
+                <h2 class="neon-text">BÀI 6: SỬ DỤNG AI CÓ TRÁCH NHIỆM TRONG HỌC TẬP VÀ NGHIÊN CỨU</h2>
+                <hr class="cyber-hr">
+                <h3>6 Nguyên Tắc Vàng Làm Kim Chỉ Nam Bản Thân</h3>
+                
+                <div class="rules-grid">
+                    <div class="rule-box">
+                        <div class="rule-num">01</div>
+                        <h4>Tư duy trước - Ra lệnh sau</h4>
+                        <p>Luôn tự mình suy nghĩ, tìm giải pháp và vạch ra cấu trúc bài làm ít nhất 15 phút trước khi mở bất kỳ công cụ AI nào.</p>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">02</div>
+                        <h4>Xác thực kép (Fact-checking)</h4>
+                        <p>Tuyệt đối không tin tưởng hoàn toàn vào các số liệu, công thức toán học hoặc trích dẫn do AI cung cấp. Mọi thông tin quan trọng đều phải được đối chiếu lại với giáo trình hoặc bài báo khoa học gốc.</p>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">03</div>
+                        <h4>Đầu ra của AI là nguyên liệu, không phải sản phẩm</h4>
+                        <p>Chỉ sử dụng kết quả của AI dưới dạng ý tưởng thô, tài liệu tham khảo sơ khởi. Mọi sản phẩm nộp bài cuối cùng phải được viết lại bằng văn phong và tư duy của chính mình.</p>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">04</div>
+                        <h4>Minh bạch tuyệt đối</h4>
+                        <p>Luôn khai báo trung thực, rõ ràng các phần việc có sự can thiệp hay gợi ý từ AI trong mọi báo cáo, tiểu luận.</p>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">05</div>
+                        <h4>Bảo mật dữ liệu học thuật</h4>
+                        <p>Không tải lên các tài liệu chưa công bố của giảng viên, các dự án nghiên cứu nội bộ của phòng thí nghiệm hoặc thông tin cá nhân lên các nền tảng AI công cộng.</p>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">06</div>
+                        <h4>Dùng AI để hiểu sâu, không dùng để làm tắt</h4>
+                        <p>Tập trung đặt các câu hỏi dạng <em>"Tại sao dòng lệnh này chạy sai?"</em>, <em>"Cơ chế hoạt động của thuật toán này là gì?"</em> thay vì các câu hỏi mì ăn liền <em>"Hãy làm hộ tôi bài này"</em>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bước3" class="portfolio-section">
+            <div class="cyber-card">
+                <h2 class="neon-text">TỔNG KẾT DỰ ÁN</h2>
+                <hr class="cyber-hr">
+                <h3>Trải nghiệm và cảm nhận cá nhân</h3>
+                <p>Quá trình thực hiện chuỗi bài tập và xây dựng Digital Portfolio này mang lại cái nhìn toàn diện về kỹ năng quản trị dữ liệu khoa học, tối ưu hóa câu lệnh tương tác máy tính, và nâng cao ý thức đạo đức công nghệ. Hệ thống giúp bản thân sẵn sàng tích hợp các công cụ tự động hóa vào chuyên ngành Kỹ thuật máy tính một cách chuyên nghiệp.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="cyber-footer">
+        <p>&copy; 2026 Nguyễn Chí Tùng - K70 VNU-UET.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
