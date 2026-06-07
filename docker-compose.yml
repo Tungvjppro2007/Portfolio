@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  portfolio:
+    build: .
+    image: chitung-portfolio:latest
+    container_name: chitung_portfolio_web
+    ports:
+      - "8080:80"
+    restart: unless-stopped

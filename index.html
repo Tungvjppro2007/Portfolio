@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Chí Tùng</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="profile-logo-container">
+                    <i class="fa-solid fa-graduation-cap logo-icon"></i>
+                </div>
+                <h2 class="profile-name">Nguyễn Chí Tùng</h2>
+                <p class="profile-title">Sinh viên UET - VNU</p>
+                <div class="profile-badge">VNU1001_E252005</div>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#home" class="nav-item active" data-target="home">
+                    <i class="fa-solid fa-house"></i> <span>Trang chủ</span>
+                </a>
+                <div class="nav-section-title">Bài tập thực hành</div>
+                <a href="#bai1" class="nav-item" data-target="bai1">
+                    <i class="fa-solid fa-folder-open"></i> <span>Bài 1: Thao tác Tệp</span>
+                </a>
+                <a href="#bai2" class="nav-item" data-target="bai2">
+                    <i class="fa-solid fa-magnifying-glass"></i> <span>Bài 2: Tìm kiếm học thuật</span>
+                </a>
+                <a href="#bai3" class="nav-item" data-target="bai3">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Bài 3: Kỹ thuật Prompt</span>
+                </a>
+                <a href="#bai4" class="nav-item" data-target="bai4">
+                    <i class="fa-solid fa-users-gear"></i> <span>Bài 4: Hợp tác số</span>
+                </a>
+                <a href="#bai5" class="nav-item" data-target="bai5">
+                    <i class="fa-solid fa-compass-drafting"></i> <span>Bài 5: Sáng tạo nội dung</span>
+                </a>
+                <a href="#bai6" class="nav-item" data-target="bai6">
+                    <i class="fa-solid fa-shield-halved"></i> <span>Bài 6: Liêm chính AI</span>
+                </a>
+                <div class="nav-section-title">Tổng kết</div>
+                <a href="#step3" class="nav-item" data-target="step3">
+                    <i class="fa-solid fa-square-poll-vertical"></i> <span>Nhìn lại & Liên hệ</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <p>© 2026 Nguyễn Chí Tùng</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Mobile Header -->
+            <header class="mobile-header">
+                <div class="mobile-profile">
+                    <div class="mobile-logo-circle">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h3>Nguyễn Chí Tùng</h3>
+                        <p>UET - VNU</p>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </header>
+
+            <!-- Pages -->
+            
+            <!-- 1. HOME PAGE (STEP 1) -->
+            <section id="home" class="page-section active">
+                <div class="hero-banner">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <span class="badge">Digital Portfolio</span>
+                        <h1 class="glow-text">Nguyễn Chí Tùng</h1>
+                        <p class="subtitle">Sinh viên Trường Đại học Công nghệ - Đại học Quốc gia Hà Nội (VNU-UET)</p>
+                        <div class="quick-stats">
+                            <div class="stat-item">
+                                <i class="fa-solid fa-university"></i>
+                                <span>Đại học Công nghệ - ĐHQGHN</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fa-solid fa-id-card"></i>
+                                <span>MSSV: 25020816</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-2col">
+                    <!-- Learning Goals -->
+                    <div class="content-card glow-card">
+                        <div class="card-header">
+                            <i class="fa-solid fa-bullseye card-icon blue-glow"></i>
+                            <h3>Mục tiêu học tập</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="section-intro">Định hướng và mục tiêu rèn luyện kiến thức kỹ năng số trong học kỳ:</p>
+                            <ul class="text-content-list">
+                                <li>
+                                    <i class="fa-solid fa-circle-check text-success"></i>
+                                    <span>Nắm vững những kỹ năng số đã học, biết cách tổ chức công việc và quản lý tài liệu khoa học hơn.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check text-success"></i>
+                                    <span>Rèn khả năng tìm kiếm và đánh giá thông tin một cách chính xác, tránh bị nhiễu bởi những nguồn không đáng tin.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check text-success"></i>
+                                    <span>Sử dụng AI hiệu quả để tiết kiệm thời gian, học tập thông minh hơn và làm bài tốt hơn mà vẫn đảm bảo đúng tinh thần học thuật.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Purpose -->
+                    <div class="content-card glow-card">
+                        <div class="card-header">
+                            <i class="fa-solid fa-briefcase card-icon purple-glow"></i>
+                            <h3>Mục tiêu của Portfolio</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="section-intro">Tác dụng và giá trị của việc lưu trữ các sản phẩm số:</p>
+                            <ul class="text-content-list">
+                                <li>
+                                    <i class="fa-solid fa-circle-notch text-primary"></i>
+                                    <span><strong>Lưu trữ sản phẩm:</strong> Ghi lại đầy đủ các sản phẩm học tập như hình ảnh, bài viết, prompt, kế hoạch nhóm hay video theo từng bài để thấy rõ sự thay đổi và cải thiện của bản thân qua mỗi bài tập.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-notch text-primary"></i>
+                                    <span><strong>Tự đánh giá:</strong> Tập thói quen tự đánh giá, rút kinh nghiệm sau mỗi bài để làm tốt hơn ở những lần sau.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-notch text-primary"></i>
+                                    <span><strong>Áp dụng thực tiễn:</strong> Biết cách áp dụng kiến thức vào thực tế, để những kỹ năng này không chỉ dùng cho môn học mà còn hữu ích lâu dài, học cách sử dụng AI một cách hợp lý và có trách nhiệm.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Information Summary -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-address-card card-icon"></i>
+                        <h3>Thông tin sinh viên</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="personal-info-grid">
+                            <div class="info-block">
+                                <span class="info-label">Họ và tên</span>
+                                <span class="info-val">Nguyễn Chí Tùng</span>
+                            </div>
+                            <div class="info-block">
+                                <span class="info-label">Mã số sinh viên</span>
+                                <span class="info-val">25020816</span>
+                            </div>
+                            <div class="info-block">
+                                <span class="info-label">Trường đào tạo</span>
+                                <span class="info-val">Trường Đại học Công nghệ - Đại học Quốc gia Hà Nội (UET-VNU)</span>
+                            </div>
+                            <div class="info-block">
+                                <span class="info-label">Lớp học phần</span>
+                                <span class="info-val">[VNU1001_E252005] Nhập môn CNS&AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. BÀI 1 -->
+            <section id="bai1" class="page-section">
+                <div class="page-title-area">
+                    <span class="badge">Bài thực hành 1</span>
+                    <h2>Thao tác cơ bản trên Tệp & Thư mục</h2>
+                    <p class="page-desc">Tổ chức quản lý dữ liệu máy tính khoa học và thực hành các thao tác cơ bản trên hệ điều hành Windows.</p>
+                </div>
+
+                <!-- Bài tập 1 - Chương 1: Nội dung trình bày dưới dạng văn bản cấu trúc -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-circle-info card-icon"></i>
+                        <h3>Nội dung thực hành: Quản lý tệp tin và thư mục</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="exercise-intro-box">
+                            <h4>Bài tập 1 - Chương 1: Máy tính và các thiết bị ngoại vi</h4>
+                            <p><strong>Mục tiêu bài tập:</strong> Rèn luyện kỹ năng tạo, đổi tên, sao chép, di chuyển, xóa tệp tin và thư mục một cách thành thạo trên hệ điều hành Windows (có thể điều chỉnh cho macOS/Linux).</p>
+                        </div>
+                        
+                        <h4 class="sub-section-title mt-30"><i class="fa-solid fa-list-check"></i> Quy trình thực hiện chi tiết</h4>
+                        <div class="steps-container">
+                            <div class="step-card">
+                                <div class="step-num">01</div>
+                                <div class="step-details">
+                                    <h5>Mở File Explorer</h5>
+                                    <p>Nhấn tổ hợp phím <code>Windows + E</code> hoặc nhấp vào biểu tượng thư mục màu vàng trên thanh tác vụ.</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">02</div>
+                                <div class="step-details">
+                                    <h5>Truy cập phân vùng lưu trữ</h5>
+                                    <p>Ở cột bên trái, nhấp vào <em>This PC</em>, sau đó nhấp đúp vào một ổ đĩa không phải ổ hệ thống (ví dụ: ổ D: hoặc E:). Nếu không có ổ C:, hãy vào thư mục <em>Documents</em>.</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">03</div>
+                                <div class="step-details">
+                                    <h5>Tạo thư mục làm việc chính</h5>
+                                    <p>Nhấp chuột phải vào khoảng trống -> chọn <em>New</em> -> <em>Folder</em>. Đặt tên thư mục là <code>ThucHanh_NguyenChiTung</code>. Nhấn Enter.</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">04</div>
+                                <div class="step-details">
+                                    <h5>Tạo tệp ghi chú mới</h5>
+                                    <p>Nhấp đúp chuột để vào thư mục vừa tạo. Nhấp chuột phải vào khoảng trống -> <em>New</em> -> <em>Text Document</em>. Đặt tên tệp là <code>GhiChu.txt</code>. Nhấn Enter.</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">05</div>
+                                <div class="step-details">
+                                    <h5>Đổi tên tệp tin</h5>
+                                    <p>Nhấp chuột phải vào tệp <code>GhiChu.txt</code> -> chọn <em>Rename</em>. Đổi tên thành <code>GhiChuQuanTrong.txt</code>. Nhấn Enter.</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">06</div>
+                                <div class="step-details">
+                                    <h5>Tạo thư mục con phân loại</h5>
+                                    <p>Trong thư mục <code>ThucHanh_NguyenChiTung</code>, nhấp chuột phải -> <em>New</em> -> <em>Folder</em>. Đặt tên là <code>TaiLieu</code>.</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">07</div>
+                                <div class="step-details">
+                                    <h5>Sao chép tệp tin (Copy & Paste)</h5>
+                                    <p>Nhấp chuột phải vào tệp <code>GhiChuQuanTrong.txt</code> -> chọn <em>Copy</em> (hoặc chọn tệp rồi nhấn <code>Ctrl + C</code>). Nhấp đúp vào thư mục <code>TaiLieu</code>, nhấp chuột phải vào khoảng trống -> chọn <em>Paste</em> (hoặc nhấn <code>Ctrl + V</code>) để tạo bản sao.</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">08</div>
+                                <div class="step-details">
+                                    <h5>Di chuyển tệp tin (Cut & Paste)</h5>
+                                    <p>Quay lại thư mục chính. Tạo một tệp mới tên là <code>DiChuyen.txt</code>. Nhấp chuột phải vào tệp -> chọn <em>Cut</em> (hoặc nhấn <code>Ctrl + X</code>). Nhấp đúp vào thư mục <code>TaiLieu</code>, nhấp chuột phải vào khoảng trống -> chọn <em>Paste</em> (hoặc nhấn <code>Ctrl + V</code>). Tệp gốc sẽ di dời sang vị trí mới.</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">09</div>
+                                <div class="step-details">
+                                    <h5>Xóa tệp tin</h5>
+                                    <p>Trong thư mục <code>TaiLieu</code>, nhấp chuột phải vào tệp <code>GhiChuQuanTrong.txt</code> -> chọn <em>Delete</em>. Tệp sẽ được chuyển vào Thùng rác (<em>Recycle Bin</em>).</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">10</div>
+                                <div class="step-details">
+                                    <h5>Xóa vĩnh viễn tệp</h5>
+                                    <p>Chọn tệp <code>DiChuyen.txt</code>, nhấn giữ phím <code>Shift</code> và nhấn <code>Delete</code>. Xác nhận xóa vĩnh viễn tệp ra khỏi hệ thống mà không qua Thùng rác.</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-num">11</div>
+                                <div class="step-details">
+                                    <h5>Khôi phục từ Recycle Bin</h5>
+                                    <p>Mở <em>Recycle Bin</em> ngoài màn hình desktop. Tìm tệp <code>GhiChuQuanTrong.txt</code> đã xóa, nhấp chuột phải và chọn <em>Restore</em> để khôi phục về vị trí ban đầu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Directory Structure Block -->
+                <div class="grid-2col">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <i class="fa-solid fa-sitemap card-icon"></i>
+                            <h3>Sơ đồ cấu trúc thư mục học tập</h3>
+                        </div>
+                        <div class="card-body">
+                            <!-- Styled text folder tree instead of image7 -->
+                            <div class="folder-tree-box">
+                                <ul class="tree-root">
+                                    <li>
+                                        <i class="fa-solid fa-hard-drive tree-icon-drive"></i> <strong>Documents (D:)</strong>
+                                        <ul>
+                                            <li><i class="fa-solid fa-folder tree-icon-folder"></i> Altstore</li>
+                                            <li class="tree-branch-active">
+                                                <i class="fa-solid fa-folder-open tree-icon-folder-open"></i> <strong>Data</strong>
+                                                <ul>
+                                                    <li><i class="fa-solid fa-folder tree-icon-folder"></i> Cá nhân</li>
+                                                    <li class="tree-branch-active">
+                                                        <i class="fa-solid fa-folder-open tree-icon-folder-open"></i> <strong>Học tập</strong>
+                                                        <ul>
+                                                            <li><i class="fa-solid fa-folder tree-icon-folder"></i> Chung</li>
+                                                            <li><i class="fa-solid fa-folder tree-icon-folder"></i> CV</li>
+                                                            <li><i class="fa-solid fa-folder tree-icon-folder"></i> Kì 1</li>
+                                                            <li><i class="fa-solid fa-folder tree-icon-folder"></i> kì 2</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <i class="fa-solid fa-comment-nodes card-icon"></i>
+                            <h3>Giải thích ý nghĩa thiết kế cấu trúc</h3>
+                        </div>
+                        <div class="card-body explanation-text">
+                            <p>“Em thiết kế cấu trúc thư mục theo hướng phân loại rõ ràng theo mục đích sử dụng để dễ quản lý và tránh bị lẫn tài liệu. Trong đó, thư mục <strong>Data</strong> được dùng làm nơi lưu trữ chính, sau đó chia nhỏ thành các nhóm như <em>Cá nhân</em>, <em>Học tập</em>, <em>Chung</em> và <em>CV</em> nhằm tách biệt tài liệu theo từng lĩnh vực cụ thể.</p>
+                            <p>Việc phân chia thêm theo <em>Kì 1</em> và <em>Kì 2</em> giúp em sắp xếp bài tập, tài liệu môn học theo từng giai đoạn học tập, thuận tiện cho việc tìm lại khi ôn thi hoặc tổng hợp. Cách tổ chức này giúp tiết kiệm thời gian, hạn chế thất lạc file và tạo thói quen làm việc khoa học hơn.”</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Only the "Ảnh đính kèm" image is rendered as <img> tag -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-paperclip card-icon"></i>
+                        <h3>Ảnh đính kèm minh chứng</h3>
+                    </div>
+                    <div class="card-body attached-media-section">
+                        <div class="image-wrapper zoom-effect single-attached-img">
+                            <img src="assets/image16.png" alt="Ảnh đính kèm: Hướng dẫn mở File Explorer" class="portfolio-image" data-lightbox>
+                        </div>
+                        <span class="image-caption"><i class="fa-solid fa-expand"></i> Ảnh đính kèm: Minh họa thao tác mở File Explorer trên máy tính</span>
+
+                        <!-- Drive Link Section -->
+                        <div class="drive-link-box">
+                            <div class="drive-text">
+                                <h4>Xem chi tiết thư mục bài làm</h4>
+                                <p>Toàn bộ tài liệu báo cáo và tệp thực hành được lưu trữ trên Google Drive của tôi.</p>
+                            </div>
+                            <a href="https://drive.google.com/drive/u/0/folders/1lpXdA9NlbhXxhiVothqXWQmdajUDTO62" target="_blank" class="btn btn-drive">
+                                <i class="fa-brands fa-google-drive"></i> Truy cập Google Drive
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. BÀI 2 -->
+            <section id="bai2" class="page-section">
+                <div class="page-title-area">
+                    <span class="badge">Bài thực hành 2</span>
+                    <h2>Tìm kiếm & Đánh giá nguồn thông tin học thuật</h2>
+                    <p class="page-desc">Sử dụng Google Scholar, cơ sở dữ liệu quốc tế uy tín, áp dụng các tiêu chí đánh giá nguồn lực tin cậy.</p>
+                </div>
+
+                <!-- Bài tập 2 - Chương 2: Nội dung trình bày dưới dạng văn bản cấu trúc thay vì ảnh -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-circle-info card-icon"></i>
+                        <h3>Nội dung thực hành: Tìm kiếm học thuật</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="exercise-intro-box">
+                            <h4>Bài tập 2 - Chương 2: Khai thác dữ liệu và thông tin</h4>
+                            <p><strong>Mục tiêu bài tập:</strong> Phát triển kỹ năng tìm kiếm và đánh giá thông tin học thuật từ các nguồn đáng tin cậy.</p>
+                        </div>
+
+                        <div class="grid-2col mt-30">
+                            <div class="info-text-box">
+                                <h5>1. Lựa chọn chủ đề nghiên cứu</h5>
+                                <p>Em chọn chủ đề <strong>"Án lệ Việt Nam – vai trò và thực tiễn áp dụng trong hệ thống pháp luật"</strong> vì án lệ được chính thức thừa nhận tại Việt Nam từ năm 2016 và đang có ảnh hưởng ngày càng rõ nét trong hoạt động xét xử thực tiễn.</p>
+                            </div>
+                            <div class="info-text-box">
+                                <h5>2. Phương pháp & Nguồn tìm kiếm</h5>
+                                <p>Em thực hiện tìm kiếm thông tin từ 4 nhóm nguồn bắt buộc bao gồm: cơ sở dữ liệu học thuật (Google Scholar), tạp chí chuyên ngành, sách chuyên khảo và nguồn mở trên Internet. Ngoài ra, em bổ sung thêm cổng thông tin chính thức của Tòa án nhân dân tối cao (TANDTC) và các báo cáo chính sách để tăng tính thực tiễn.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-text-box full-width-box mt-20">
+                            <h5>3. Tiêu chí đánh giá độ tin cậy của tài liệu tham khảo</h5>
+                            <p>Khi tìm kiếm trên Google Scholar, em ưu tiên thu thập các tài liệu trong giai đoạn <strong>2015-2025</strong>, bao gồm bài báo khoa học, sách chuyên khảo, báo cáo chính thống; trong đó có các bài nghiên cứu tiêu biểu như Nguyễn Cần Cường (2018), Trần Thị Hiền (2020), Lê Mai Anh (2021). Các tài liệu được đánh giá độ tin cậy dựa trên các tiêu chí nghiêm ngặt:</p>
+                            <div class="criteria-pills">
+                                <span class="criteria-pill"><i class="fa-solid fa-user-tie"></i> Uy tín của Tác giả</span>
+                                <span class="criteria-pill"><i class="fa-solid fa-building-columns"></i> Cơ quan xuất bản/Tạp chí có phản biện</span>
+                                <span class="criteria-pill"><i class="fa-solid fa-flask"></i> Phương pháp nghiên cứu khoa học</span>
+                                <span class="criteria-pill"><i class="fa-solid fa-quote-right"></i> Số lượng trích dẫn học thuật</span>
+                                <span class="criteria-pill"><i class="fa-solid fa-calendar-days"></i> Tính cập nhật thời gian</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IoT Security Sources Table -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-table-list card-icon"></i>
+                        <h3>Bảng tổng hợp & Đánh giá độ tin cậy 10 nguồn thông tin khoa học (IoT Security)</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="table-intro-text"><i class="fa-solid fa-info-circle"></i> Kết quả phân tích, đánh giá độ tin cậy của 10 nguồn thông tin học thuật đã thu thập:</p>
+                        <div class="table-responsive">
+                            <table class="styled-table">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Tên tài liệu / Tác giả / Năm</th>
+                                        <th>Loại nguồn</th>
+                                        <th>Cơ quan xuất bản / Lưu trữ</th>
+                                        <th>Phương pháp nghiên cứu</th>
+                                        <th>Xếp hạng & Đánh giá độ tin cậy</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="text-bold">Securing the Threads: In-Depth Analysis of IoT Architecture and Threat Mitigation (2025)</td>
+                                        <td>Bài báo khoa học</td>
+                                        <td>IEEE Xplore / SMART Conference</td>
+                                        <td>Phân tích thực nghiệm đa tầng kiến trúc IoT, mô phỏng tấn công DDoS và giải pháp Học máy kết hợp Blockchain.</td>
+                                        <td><span class="rank-badge rank-a">Rất cao (A)</span> Xuất bản bởi IEEE, phản ánh công nghệ bảo mật mới nhất 2025.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="text-bold">IoT Security through ML/DL: Software Engineering Challenges and Directions (2025)</td>
+                                        <td>Bài báo khoa học</td>
+                                        <td>ICCK Journal of Software Engineering</td>
+                                        <td>Nghiên cứu hệ thống (Systematic Review) dữ liệu từ IEEE Xplore giai đoạn 2020–2024, đánh giá giải pháp AI/ML chống xâm nhập.</td>
+                                        <td><span class="rank-badge rank-a">Rất cao (A)</span> Tổng quan hệ thống chuẩn mực, có dữ liệu đối sánh định lượng rõ ràng.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="text-bold">Deeper Insight Into Why Authentication Schemes in IoT Environments Fail to Achieve the Desired Security (Yimin Guo et al., 2024)</td>
+                                        <td>Bài báo khoa học</td>
+                                        <td>IEEE Transactions on Information Forensics and Security</td>
+                                        <td>Phân tích toán học và thực nghiệm các thuật toán xác thực lỗi trên thiết bị IoT đầu cuối.</td>
+                                        <td><span class="rank-badge rank-aplus">Xuất sắc (A+)</span> Tạp chí thuộc nhóm Q1 ISI, độ kiểm duyệt học thuật cao nhất.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="text-bold">A Review of Lightweight IoT Authentication Protocols from Perspective of Costs (I. Cetintav et al., 2025)</td>
+                                        <td>Bài báo khoa học</td>
+                                        <td>IEEE Access</td>
+                                        <td>So sánh hiệu năng phần cứng, chi phí tính toán và mức tiêu thụ năng lượng của các giao thức mã hóa hạng nhẹ.</td>
+                                        <td><span class="rank-badge rank-a">Rất cao (A)</span> Đánh giá tối ưu hóa phần cứng sâu sắc, dữ liệu thực nghiệm nhúng thực tế.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="text-bold">Automated IoT Firmware Vulnerability Detection Using Large Language Models (Preprints, 2025)</td>
+                                        <td>Bài báo khoa học</td>
+                                        <td>MDPI Preprints / OWASP Framework</td>
+                                        <td>Thực nghiệm xây dựng pipeline tự động hóa công cụ dịch ngược (Ghidra, EMBA) phối hợp với mô hình ngôn ngữ lớn LLM.</td>
+                                        <td><span class="rank-badge rank-b">Trung bình/Cao (B)</span> Đột phá nhưng ở dạng tiền xuất bản (Preprint), cần đối chiếu thêm.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td class="text-bold">Exploring security threats and solutions Techniques for IoT: from vulnerabilities to vigilance (Sahu & Mazumdar, 2024)</td>
+                                        <td>Bài báo khoa học</td>
+                                        <td>Frontiers in Artificial Intelligence</td>
+                                        <td>Khảo sát phân loại tấn công tầng vật lý (Side-channel, phần cứng) và tầng mạng (Sniffing, XSS).</td>
+                                        <td><span class="rank-badge rank-a">Rất cao (A)</span> Hệ thống Frontiers uy tín, phân tích chi tiết lỗ hổng phần cứng.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td class="text-bold">A Literature Review on Security in the Internet of Things: Identifying Critical Categories (MDPI, 2025)</td>
+                                        <td>Bài báo khoa học</td>
+                                        <td>MDPI Computer Sciences</td>
+                                        <td>Phân tích thư mục, tổng hợp trắc lượng khoa học các xu hướng tấn công từ năm 2021 đến 2025.</td>
+                                        <td><span class="rank-badge rank-a">Rất cao (A)</span> Cung cấp số liệu thống kê trực quan về tốc độ tăng trưởng thiết bị.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td class="text-bold">Comprehensive Analysis of IoT Security: Threats, Detection Methods, and Defense Strategies (JIOT, 2024)</td>
+                                        <td>Bài báo khoa học</td>
+                                        <td>Tech Science Press</td>
+                                        <td>Phân tích kiến trúc 3 lớp (Hardware, System, User Layer) và đề xuất hash mật mã để xác thực firmware integrity.</td>
+                                        <td><span class="rank-badge rank-a">Rất cao (A)</span> Định hướng giải pháp kỹ thuật rất rõ ràng cho lập trình viên hệ thống.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td class="text-bold">Enhancing IoT Security: Predicting Password Vulnerability using Machine Learning (EJECE, 2024)</td>
+                                        <td>Bài báo khoa học</td>
+                                        <td>European Journal of Electrical Engineering</td>
+                                        <td>Sử dụng tập dữ liệu lưu trữ các cuộc tấn công Brute Force để huấn luyện mô hình dự đoán độ yếu mật khẩu.</td>
+                                        <td><span class="rank-badge rank-b">Trung bình/Cao (B)</span> Phương pháp thực tế nhưng dữ liệu phụ thuộc nhiều vào lịch sử cũ.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td class="text-bold">OWASP IoT Security Testing Guide (2025/2026)</td>
+                                        <td>Sách chuyên khảo / Cẩm nang</td>
+                                        <td>Open Worldwide Application Security Project (OWASP)</td>
+                                        <td>Tổng hợp các kịch bản kiểm thử (Test cases) chuẩn quốc tế áp dụng cho phân tích tĩnh và động trên hệ thống IoT.</td>
+                                        <td><span class="rank-badge rank-aplus">Xuất sắc (A+)</span> Cẩm nang chuẩn công nghiệp (Industry Standard) uy tín tối cao.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Only the "Ảnh đính kèm" image is rendered as <img> tag -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-paperclip card-icon"></i>
+                        <h3>Ảnh đính kèm minh chứng</h3>
+                    </div>
+                    <div class="card-body attached-media-section">
+                        <div class="image-wrapper zoom-effect single-attached-img">
+                            <img src="assets/image11.png" alt="Ảnh đính kèm: Kết quả tìm kiếm Án lệ Việt Nam" class="portfolio-image" data-lightbox>
+                        </div>
+                        <span class="image-caption"><i class="fa-solid fa-expand"></i> Ảnh đính kèm: Ảnh chụp màn hình kết quả tìm kiếm Google Scholar thực tế</span>
+
+                        <!-- Drive Link Section -->
+                        <div class="drive-link-box">
+                            <div class="drive-text">
+                                <h4>Xem chi tiết tài liệu học tập</h4>
+                                <p>Truy cập thư mục lưu trữ danh sách tài liệu tham khảo đầy đủ đã thu thập.</p>
+                            </div>
+                            <a href="https://drive.google.com/drive/u/0/folders/1ykd86UovCqO89rjt_KT8KPJTLOB8nNG8" target="_blank" class="btn btn-drive">
+                                <i class="fa-brands fa-google-drive"></i> Thư mục Bài tập học thuật
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. BÀI 3 -->
+            <section id="bai3" class="page-section">
+                <div class="page-title-area">
+                    <span class="badge">Bài thực hành 3</span>
+                    <h2>Kỹ năng viết Prompt hiệu quả với AI</h2>
+                    <p class="page-desc">Áp dụng các kỹ năng Prompt Engineering (Role, Context, Constraints, Few-shot) trong học tập.</p>
+                </div>
+
+                <!-- Bài tập 3 - Chương 3: Nội dung trình bày dạng văn bản/element thay vì ảnh -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-circle-info card-icon"></i>
+                        <h3>Nội dung thực hành: Viết prompt hiệu quả cho các tác vụ học tập</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="exercise-intro-box">
+                            <h4>Bài tập 3 - Chương 3: Tổng quan về trí tuệ nhân tạo</h4>
+                            <p><strong>Mục tiêu bài tập:</strong> Phát triển kỹ năng viết prompt hiệu quả cho các tác vụ học tập để nhận được phản hồi chất lượng tốt nhất từ các công cụ AI.</p>
+                        </div>
+
+                        <div class="grid-2col mt-30">
+                            <div class="info-text-box">
+                                <h5>Quy trình thực hiện</h5>
+                                <ul class="bullet-list-content">
+                                    <li><strong>Bước 1: Chọn tác vụ phổ biến:</strong> Em chọn 3 tác vụ học tập phổ biến gồm: Tóm tắt ngữ pháp tiếng Anh (Thì hiện tại hoàn thành), Giải thích khái niệm học thuật phức tạp (Ẩn dụ trong ngôn ngữ học), và Tạo bộ câu hỏi ôn tập (Chủ đề "Từ loại tiếng Việt").</li>
+                                    <li><strong>Bước 2: Thiết lập 3 cấp độ Prompt:</strong> Viết Prompt cơ bản, Prompt cải tiến (có yêu cầu cấu trúc, giới hạn), và Prompt nâng cao (áp dụng kỹ thuật role prompting và few-shot example).</li>
+                                </ul>
+                            </div>
+                            <div class="info-text-box">
+                                <h5>Nguyên tắc & Mẹo viết prompt rút ra</h5>
+                                <ul class="bullet-list-content">
+                                    <li><strong>Rõ ràng & cụ thể:</strong> Thêm ngữ cảnh và vai trò (Role prompting) giúp AI trả lời đúng tông giọng.</li>
+                                    <li><strong>Thiết lập giới hạn:</strong> Giới hạn đầu ra (số gạch đầu dòng, số từ, cấu trúc mẫu) giúp tránh câu trả lời lan man.</li>
+                                    <li><strong>Đưa ví dụ mẫu (Few-shot prompting):</strong> Giúp AI hiểu định dạng kết quả kỳ vọng dễ dàng.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Phân tích kết quả từ các prompt -->
+                        <div class="comparison-analysis-box mt-20">
+                            <h5><i class="fa-solid fa-magnifying-glass-chart"></i> Đánh giá hiệu quả giữa các cấp độ Prompt</h5>
+                            <div class="analysis-grid">
+                                <div class="analysis-col">
+                                    <h6>Prompt Cơ bản</h6>
+                                    <p>Nội dung thường đúng lý thuyết nhưng rất dài, lan man và thiếu cấu trúc tóm gọn, bắt học viên phải tự lọc lại thông tin.</p>
+                                </div>
+                                <div class="analysis-col">
+                                    <h6>Prompt Cải tiến</h6>
+                                    <p>Kết quả gọn gàng hơn, tập trung đúng nội dung chính và cấu trúc yêu cầu, dễ dùng làm ghi chú học tập nhanh.</p>
+                                </div>
+                                <div class="analysis-col">
+                                    <h6>Prompt Nâng cao</h6>
+                                    <p>Đạt kết quả tối ưu nhất. Nhờ vai trò giáo viên và định hướng đối tượng, AI cung cấp thông tin cô đọng, dễ hiểu và có ví dụ minh họa cực kỳ trực quan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prompt Versions Showcase -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-list-ol card-icon"></i>
+                        <h3>Các phiên bản thiết kế Prompt chi tiết</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Custom Tabs for Tasks -->
+                        <div class="custom-tabs">
+                            <button class="tab-btn active" data-tab="task1">Tác vụ 1: Tóm tắt ngữ pháp tiếng Anh</button>
+                            <button class="tab-btn" data-tab="task2">Tác vụ 2: Giải thích ẩn dụ văn học</button>
+                            <button class="tab-btn" data-tab="task3">Tác vụ 3: Tạo câu hỏi từ loại Tiếng Việt</button>
+                        </div>
+
+                        <div class="tab-content active" id="task1">
+                            <div class="prompt-showcase">
+                                <div class="prompt-box basic">
+                                    <h5><i class="fa-solid fa-battery-quarter"></i> Phiên bản Cơ bản</h5>
+                                    <p class="prompt-text">“Tóm tắt nội dung về thì hiện tại hoàn thành.”</p>
+                                    <div class="result-evaluation">
+                                        <strong>Kết quả phản hồi của AI:</strong> Trả về văn bản dài dòng, có dạng lý thuyết như sách giáo khoa, không có cấu trúc tóm gọn để dễ nhớ.
+                                    </div>
+                                </div>
+                                <div class="prompt-box improved">
+                                    <h5><i class="fa-solid fa-battery-half"></i> Phiên bản Cải tiến</h5>
+                                    <p class="prompt-text">“Hãy tóm tắt bài học về thì hiện tại hoàn thành thành 3 gạch đầu dòng, tập trung vào cấu trúc và cách sử dụng.”</p>
+                                    <div class="result-evaluation">
+                                        <strong>Kết quả phản hồi của AI:</strong> Trình bày đúng cấu trúc 3 gạch đầu dòng, ngắn gọn và tập trung hơn, nhưng chưa có ví dụ thực tế.
+                                    </div>
+                                </div>
+                                <div class="prompt-box advanced">
+                                    <h5><i class="fa-solid fa-battery-full"></i> Phiên bản Nâng cao</h5>
+                                    <p class="prompt-text">“Bạn hãy đóng vai giáo viên tiếng Anh. Hãy tóm tắt bài học về thì hiện tại hoàn thành cho học sinh lớp 10. Viết ngắn gọn 3 ý chính và 1 ví dụ minh họa.”</p>
+                                    <div class="ai-response-box">
+                                        <h6><i class="fa-solid fa-robot"></i> Nội dung phản hồi của AI (Transcribed from image6):</h6>
+                                        <div class="ai-response-text">
+                                            <p>“Dạ được nhé 😊 Cô/Thầy sẽ tóm tắt nhanh "Thì Hiện Tại Hoàn Thành (Present Perfect)" theo kiểu ghi chú ôn thi, dễ nhớ nha:</p>
+                                            <p><strong>THÌ HIỆN TẠI HOÀN THÀNH (Present Perfect)</strong></p>
+                                            <p><strong>1) Công thức</strong><br>
+                                            * Khẳng định: <code>S + have/has + V3/ed</code> (I/You/We/They + have | He/She/It + has)<br>
+                                            * Phủ định: <code>S + haven't/hasn't + V3/ed</code><br>
+                                            * Nghi vấn: <code>Have/Has + S + V3/ed ?</code></p>
+                                            <p><strong>2) Cách dùng chính</strong><br>
+                                            * (1) Quá khứ nhưng liên quan hiện tại (nhấn vào kết quả ở hiện tại).<br>
+                                            * (2) Bắt đầu trong quá khứ và kéo dài đến hiện tại (thường đi với <code>for</code> / <code>since</code>).”</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="task2">
+                            <div class="prompt-showcase">
+                                <div class="prompt-box basic">
+                                    <h5><i class="fa-solid fa-battery-quarter"></i> Phiên bản Cơ bản</h5>
+                                    <p class="prompt-text">“Giải thích khái niệm ẩn dụ trong ngôn ngữ học.”</p>
+                                    <div class="result-evaluation">
+                                        <strong>Kết quả phản hồi của AI:</strong> Định nghĩa chuẩn lý thuyết nhưng khá khô khan, khó tiếp cận với người không chuyên.
+                                    </div>
+                                </div>
+                                <div class="prompt-box improved">
+                                    <h5><i class="fa-solid fa-battery-half"></i> Phiên bản Cải tiến</h5>
+                                    <p class="prompt-text">“Giải thích khái niệm ẩn dụ trong ngôn ngữ học bằng ngôn ngữ dễ hiểu, kèm 1 ví dụ minh họa.”</p>
+                                    <div class="result-evaluation">
+                                        <strong>Kết quả phản hồi của AI:</strong> Diễn đạt dễ hiểu hơn, sử dụng ví dụ gần gũi (<i>"Thời gian là vàng"</i>) để giải thích nghĩa.
+                                    </div>
+                                </div>
+                                <div class="prompt-box advanced">
+                                    <h5><i class="fa-solid fa-battery-full"></i> Phiên bản Nâng cao</h5>
+                                    <p class="prompt-text">“Đóng vai giảng viên ngôn ngữ học, hãy giải thích khái niệm ẩn dụ một cách sinh động, có ví dụ từ văn học Việt Nam và tiếng Anh để so sánh.”</p>
+                                    <div class="result-evaluation">
+                                        <strong>Kết quả phản hồi của AI:</strong> Rất chuyên sâu và cuốn hút. Đối sánh rõ ràng giữa ẩn dụ trong tiếng Việt (ví dụ ca dao về "mặt trời", "lòng mẹ") và tiếng Anh (<i>"Time is money"</i>).
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="task3">
+                            <div class="prompt-showcase">
+                                <div class="prompt-box basic">
+                                    <h5><i class="fa-solid fa-battery-quarter"></i> Phiên bản Cơ bản</h5>
+                                    <p class="prompt-text">“Tạo một số câu hỏi ôn tập về từ loại tiếng Việt.”</p>
+                                    <div class="result-evaluation">
+                                        <strong>Kết quả phản hồi của AI:</strong> Danh sách câu hỏi chung chung, không có phân loại cụ thể và không đính kèm đáp án giải thích.
+                                    </div>
+                                </div>
+                                <div class="prompt-box improved">
+                                    <h5><i class="fa-solid fa-battery-half"></i> Phiên bản Cải tiến</h5>
+                                    <p class="prompt-text">“Hãy tạo 5 câu hỏi trắc nghiệm về các từ loại trong tiếng Việt (danh từ, động từ, tính từ), kèm đáp án.”</p>
+                                    <div class="result-evaluation">
+                                        <strong>Kết quả phản hồi của AI:</strong> Tạo 5 câu hỏi trắc nghiệm có cấu trúc lựa chọn A, B, C, D rõ ràng và chỉ ra đáp án đúng.
+                                    </div>
+                                </div>
+                                <div class="prompt-box advanced">
+                                    <h5><i class="fa-solid fa-battery-full"></i> Phiên bản Nâng cao</h5>
+                                    <p class="prompt-text">“Đóng vai giáo viên tiếng Việt, hãy tạo 5 câu hỏi trắc nghiệm và 2 câu hỏi tự luận về từ loại, chia theo độ khó (dễ – trung bình – khó), kèm đáp án và lời giải ngắn gọn.”</p>
+                                    <div class="result-evaluation">
+                                        <strong>Kết quả phản hồi của AI:</strong> Hệ thống câu hỏi phân hóa tốt mức độ nhận thức, có kèm phần tự luận rèn luyện nâng cao và lời giải chi tiết cho từng câu trắc nghiệm.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Only the "Ảnh đính kèm" images are rendered as <img> tags -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-paperclip card-icon"></i>
+                        <h3>Ảnh đính kèm minh chứng</h3>
+                    </div>
+                    <div class="card-body attached-media-section">
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <div class="image-wrapper zoom-effect">
+                                    <img src="assets/image17.png" alt="Ảnh đính kèm: Ma trận thiết kế Prompt" data-lightbox>
+                                </div>
+                                <p>Ảnh đính kèm: Ma trận cấu trúc thiết kế Prompt</p>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image-wrapper zoom-effect">
+                                    <img src="assets/image30.png" alt="Ảnh đính kèm: Phản hồi AI nâng cao" data-lightbox>
+                                </div>
+                                <p>Ảnh đính kèm: Minh họa phản hồi chi tiết của AI trên thiết bị</p>
+                            </div>
+                        </div>
+
+                        <div class="drive-link-box">
+                            <div class="drive-text">
+                                <h4>Xem chi tiết báo cáo kỹ năng Prompt</h4>
+                                <p>Tài liệu lưu trữ đầy đủ các đoạn hội thoại thử nghiệm prompt.</p>
+                            </div>
+                            <a href="https://drive.google.com/drive/u/0/folders/1ykd86UovCqO89rjt_KT8KPJTLOB8nNG8" target="_blank" class="btn btn-drive">
+                                <i class="fa-brands fa-google-drive"></i> Thư mục Bài tập Prompt
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. BÀI 4 -->
+            <section id="bai4" class="page-section">
+                <div class="page-title-area">
+                    <span class="badge">Bài thực hành 4</span>
+                    <h2>Giao tiếp & Hợp tác trong môi trường số</h2>
+                    <p class="page-desc">Làm việc nhóm khoa học thông qua bộ công cụ số: Trello, Google Docs, Google Meet và Zalo.</p>
+                </div>
+
+                <!-- Bài tập 4 - Chương 4: Trình bày thông tin thay vì dùng ảnh -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-circle-info card-icon"></i>
+                        <h3>Nội dung thực hành: Làm việc nhóm trực tuyến</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="exercise-intro-box">
+                            <h4>Bài tập 4 - Chương 4: Giao tiếp và hợp tác trong môi trường số</h4>
+                            <p><strong>Mục tiêu bài tập:</strong> Thành thạo các công cụ hợp tác trực tuyến để phân công công việc, cộng tác tài liệu và quản lý dự án nhóm đúng tiến độ.</p>
+                        </div>
+
+                        <div class="grid-2col mt-30">
+                            <div class="info-text-box">
+                                <h5>Thiết lập không gian làm việc chung</h5>
+                                <p>Nhóm tiến hành lựa chọn một dự án nghiên cứu nhỏ kéo dài trong 1 tuần với chủ đề <strong>"Quyền tác giả trong học tập và sáng tạo nội dung"</strong> (hoặc ứng dụng AI trong Y học). Các công cụ được thống nhất phân bổ:</p>
+                                <ul class="bullet-list-content">
+                                    <li><strong>Trello:</strong> Tạo bảng làm việc chung gồm 3 cột chính: <i>Những việc cần làm - Đang làm - Xong</i>.</li>
+                                    <li><strong>Google Docs:</strong> Tạo tài liệu chung phân quyền chỉnh sửa để cùng biên soạn báo cáo.</li>
+                                    <li><strong>Google Drive:</strong> Tạo thư mục lưu trữ tài liệu tham khảo chung của cả nhóm.</li>
+                                </ul>
+                            </div>
+                            <div class="info-text-box">
+                                <h5>Quy trình quản lý tiến độ trên Trello</h5>
+                                <p>Mỗi nhiệm vụ cụ thể được nhóm trưởng tạo dưới dạng một card và gán tên thành viên phụ trách rõ ràng. Cách phân công này giúp cả nhóm theo dõi trực quan ai đang làm phần nào và tiến độ chung ra sao. Các tính năng như đặt deadline (ngày đến hạn) và checklist được sử dụng để kiểm soát thời gian. Khi hoàn thành, card được kéo sang cột "Xong", giúp giảm thiểu rủi ro chậm trễ công việc.</p>
+                            </div>
+                        </div>
+
+                        <!-- Khó khăn & Giải pháp Table -->
+                        <h4 class="sub-section-title mt-30"><i class="fa-solid fa-triangle-exclamation"></i> Khó khăn gặp phải & Giải pháp khắc phục của nhóm</h4>
+                        <div class="table-responsive">
+                            <table class="styled-table compact">
+                                <thead>
+                                    <tr>
+                                        <th>Khó khăn thực tế</th>
+                                        <th>Nguyên nhân</th>
+                                        <th>Giải pháp xử lý của nhóm</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-bold">Tin nhắn Zalo bị trôi, khó tìm lại thông tin cũ.</td>
+                                        <td>Gửi quá nhiều tin nhắn lộn xộn, không phân luồng trò chuyện.</td>
+                                        <td>Quy định: Chỉ bàn về bài tập trong nhóm chat chính và bắt buộc ghim những thông tin quan trọng lên đầu nhóm.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold">Một số thành viên chưa quen sử dụng Trello.</td>
+                                        <td>Đây là lần đầu tiên tiếp cận giao diện quản lý Kanban.</td>
+                                        <td>Nhóm trưởng tìm tài liệu hướng dẫn và quay video ngắn hướng dẫn thao tác cơ bản gửi vào nhóm.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold">Google Docs bị lag khi nhiều người cùng chỉnh sửa.</td>
+                                        <td>Đường truyền wifi yếu và số lượng người chỉnh sửa đồng thời quá đông.</td>
+                                        <td>Chia nhỏ các phần nội dung ra làm riêng, sau đó nhóm trưởng sẽ tổng hợp lại thành một file chính hoàn chỉnh.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold">Thành viên quên deadline công việc.</td>
+                                        <td>Chỉ nhắc nhở thủ công trên Zalo, tin nhắn dễ bị bỏ qua.</td>
+                                        <td>Bật tính năng nhắc nhở tự động trên thẻ Trello và nhóm trưởng trực tiếp tag tên nhắc nhở trước deadline 1 ngày.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold">File đính kèm trên Zalo bị giới hạn dung lượng.</td>
+                                        <td>Một số tài liệu y học tham khảo dung lượng lớn hơn 100MB.</td>
+                                        <td>Upload toàn bộ tài liệu lên Google Drive chung và chia sẻ link thay vì gửi file trực tiếp.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Only the "Ảnh đính kèm" images are rendered as <img> tags -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-paperclip card-icon"></i>
+                        <h3>Ảnh đính kèm minh chứng</h3>
+                    </div>
+                    <div class="card-body attached-media-section">
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <div class="image-wrapper zoom-effect">
+                                    <img src="assets/image5.png" alt="Ảnh đính kèm: Các công cụ hợp tác số" data-lightbox>
+                                </div>
+                                <p>Ảnh đính kèm: Sơ đồ phân bổ công cụ hợp tác trực tuyến</p>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image-wrapper zoom-effect">
+                                    <img src="assets/image13.png" alt="Ảnh đính kèm: Bảng so sánh ưu nhược điểm" data-lightbox>
+                                </div>
+                                <p>Ảnh đính kèm: So sánh ưu nhược điểm của Trello, Docs và Drive</p>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image-wrapper zoom-effect">
+                                    <img src="assets/image12.png" alt="Ảnh đính kèm: Bảng Trello thực tế" data-lightbox>
+                                </div>
+                                <p>Ảnh đính kèm: Giao diện phân công nhiệm vụ thực tế của nhóm</p>
+                            </div>
+                        </div>
+
+                        <div class="drive-link-box">
+                            <div class="drive-text">
+                                <h4>Xem chi tiết thư mục Bài làm 4</h4>
+                                <p>Báo cáo quy trình làm việc nhóm, phân tích tình huống và biên bản làm việc.</p>
+                            </div>
+                            <a href="https://drive.google.com/drive/u/0/folders/1ykd86UovCqO89rjt_KT8KPJTLOB8nNG8" target="_blank" class="btn btn-drive">
+                                <i class="fa-brands fa-google-drive"></i> Thư mục Bài tập 4
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. BÀI 5 -->
+            <section id="bai5" class="page-section">
+                <div class="page-title-area">
+                    <span class="badge">Bài thực hành 5</span>
+                    <h2>Sáng tạo nội dung số - Thiết kế Infographic</h2>
+                    <p class="page-desc">Ứng dụng AI tạo ảnh, sinh văn bản và công cụ thiết kế đồ họa để truyền thông kiến thức bổ ích.</p>
+                </div>
+
+                <!-- Bài tập 5 - Chương 5: Trình bày nội dung thay vì dùng ảnh -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-circle-info card-icon"></i>
+                        <h3>Nội dung thực hành: Sử dụng AI hỗ trợ sáng tạo nội dung</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="exercise-intro-box">
+                            <h4>Bài tập 5 - Chương 5: Sáng tạo nội dung số</h4>
+                            <p><strong>Mục tiêu bài tập:</strong> Thành thạo việc kết hợp các công cụ AI tạo sinh khác nhau để hoàn thiện một sản phẩm nội dung số hoàn chỉnh theo chủ đề thực tế.</p>
+                        </div>
+
+                        <div class="grid-2col mt-30">
+                            <div class="info-text-box">
+                                <h5>Quy trình phối hợp 3 công cụ AI</h5>
+                                <p>Em lựa chọn thực hiện dự án thiết kế nội dung truyền thông chủ đề <strong>"5 dấu hiệu stress ở sinh viên và cách tự chăm sóc tinh thần mỗi ngày"</strong> (kết hợp thiết kế infographic "Giấc ngủ ngon"). Quy trình bao gồm:</p>
+                                <ul class="bullet-list-content">
+                                    <li><strong>ChatGPT (Văn bản):</strong> Sử dụng prompt chi tiết để sinh dàn ý, lên ý tưởng nội dung bài đăng blog và các gạch đầu dòng khoa học.</li>
+                                    <li><strong>DALL-E 3 (Hình ảnh):</strong> Tạo ra các sticker, biểu tượng phẳng phong cách màu pastel đồng bộ để minh họa cho bài viết.</li>
+                                    <li><strong>Canva AI (Thiết kế):</strong> Điều chỉnh bố cục, font chữ tiếng Việt, phối hợp màu sắc làm dịu mắt để xuất ra sản phẩm infographic trực quan cuối cùng.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="info-text-box">
+                                <h5>Phân tích vai trò & Rút kinh nghiệm về AI</h5>
+                                <p><strong>Ưu điểm:</strong> AI hỗ trợ tiết kiệm tối đa thời gian lên ý tưởng ban đầu, tạo nội dung nhanh chóng và đồng bộ hóa phong cách đồ họa.</p>
+                                <p><strong>Hạn chế:</strong> Nội dung lý thuyết cần người viết kiểm chứng kỹ để tránh hiện tượng ảo tưởng của AI. Trình tạo ảnh DALL-E 3 thường xuyên bị lỗi chính tả khi vẽ chữ tiếng Việt trên ảnh.</p>
+                                <p><strong>Thay đổi quy trình:</strong> AI đóng vai trò như một trợ lý, giúp dịch chuyển công việc từ tự tay vẽ/viết từ đầu sang kiểm duyệt, chọn lọc và tối ưu hóa sản phẩm.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Only the "Ảnh đính kèm" images are rendered as <img> tags -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-paperclip card-icon"></i>
+                        <h3>Sản phẩm Infographic & Banner nghệ thuật đính kèm</h3>
+                    </div>
+                    <div class="card-body attached-media-section">
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <div class="image-wrapper zoom-effect" style="height: 400px;">
+                                    <img src="assets/image2.png" alt="Ảnh đính kèm: Infographic Giấc Ngủ Ngon" class="portfolio-image" data-lightbox>
+                                </div>
+                                <p>Ảnh đính kèm: Infographic truyền thông "Giấc Ngủ Ngon" cho sinh viên</p>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image-wrapper zoom-effect" style="height: 400px;">
+                                    <img src="assets/image9.png" alt="Ảnh đính kèm: Banner Sweet Dreams" class="portfolio-image" data-lightbox>
+                                </div>
+                                <p>Ảnh đính kèm: Banner minh họa "Sweet Dreams" phong cách pastel</p>
+                            </div>
+                        </div>
+
+                        <div class="drive-link-box">
+                            <div class="drive-text">
+                                <h4>Tải về các tệp thiết kế gốc</h4>
+                                <p>Link Google Drive lưu trữ file ảnh chất lượng cao và file PDF của Infographic.</p>
+                            </div>
+                            <a href="https://drive.google.com/drive/u/0/folders/1ykd86UovCqO89rjt_KT8KPJTLOB8nNG8" target="_blank" class="btn btn-drive">
+                                <i class="fa-brands fa-google-drive"></i> Thư mục Bài tập 5
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. BÀI 6 -->
+            <section id="bai6" class="page-section">
+                <div class="page-title-area">
+                    <span class="badge">Bài thực hành 6</span>
+                    <h2>An toàn thông tin & Sử dụng AI có trách nhiệm</h2>
+                    <p class="page-desc">Tuân thủ liêm chính học thuật, nghiên cứu chính sách nhà trường và xây dựng đạo đức sử dụng công nghệ số.</p>
+                </div>
+
+                <!-- Bài tập 6 - Chương 6: Nội dung dạng văn bản/element thay vì ảnh -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-circle-info card-icon"></i>
+                        <h3>Nội dung thực hành: Sử dụng AI có trách nhiệm trong học tập</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="exercise-intro-box">
+                            <h4>Bài tập 6 - Chương 6: An toàn và liêm chính học thuật trong môi trường số</h4>
+                            <p><strong>Mục tiêu bài tập:</strong> Hiểu rõ và cam kết tuân thủ chính sách của trường đại học về liêm chính học thuật khi sử dụng các công cụ trí tuệ nhân tạo trong học tập và nghiên cứu khoa học.</p>
+                        </div>
+
+                        <div class="grid-2col mt-30">
+                            <div class="info-text-box">
+                                <h5>Nghiên cứu chính sách học thuật tại VNU</h5>
+                                <p>Đại học Quốc gia Hà Nội (VNU) xem trí tuệ nhân tạo (AI) là một công cụ hỗ trợ người học trong việc tham khảo ý tưởng, sửa lỗi lập trình hoặc cải thiện diễn đạt. Tuy nhiên, VNU tuyệt đối cấm việc lạm dụng AI để thay thế tư duy phản biện cá nhân hoặc làm sai lệch kết quả đánh giá năng lực thực tế của người học.</p>
+                            </div>
+                            <div class="info-text-box">
+                                <h5>Ranh giới đạo đức hỗ trợ học tập</h5>
+                                <p><strong>Hợp lệ:</strong> Sử dụng AI để tham khảo dàn ý, gợi ý từ vựng, tìm lỗi logic trong lập trình.</p>
+                                <p><strong>Gian lận:</strong> Sử dụng AI để viết toàn bộ bài làm, bài luận sau đó nộp trực tiếp dưới danh nghĩa là sản phẩm do bản thân tự làm.</p>
+                            </div>
+                        </div>
+
+                        <!-- 6 quy tắc cá nhân -->
+                        <h4 class="sub-section-title mt-30"><i class="fa-solid fa-user-shield"></i> Bộ 6 nguyên tắc cá nhân về sử dụng AI có trách nhiệm</h4>
+                        <div class="rules-grid">
+                            <div class="rule-card">
+                                <div class="rule-icon-circle">1</div>
+                                <p>AI chỉ là công cụ hỗ trợ, quyết định và tư duy cuối cùng thuộc về cá nhân người học.</p>
+                            </div>
+                            <div class="rule-card">
+                                <div class="rule-icon-circle">2</div>
+                                <p>Luôn trung thực và minh bạch khi sử dụng AI; ghi nhận rõ ràng sự đóng góp của AI khi được yêu cầu.</p>
+                            </div>
+                            <div class="rule-card">
+                                <div class="rule-icon-circle">3</div>
+                                <p>Chỉ sử dụng AI trong phạm vi được phép theo quy chế học thuật của nhà trường (không dùng thi cử, làm bài hộ).</p>
+                            </div>
+                            <div class="rule-card">
+                                <div class="rule-icon-circle">4</div>
+                                <p>Chịu trách nhiệm hoàn toàn đối với tính chính xác và liêm chính của nội dung nộp bài cuối cùng.</p>
+                            </div>
+                            <div class="rule-card">
+                                <div class="rule-icon-circle">5</div>
+                                <p>Luôn chủ động kiểm tra, chỉnh sửa, bổ sung lập luận riêng để cá nhân hóa kết quả từ AI, tránh đạo văn không chủ ý.</p>
+                            </div>
+                            <div class="rule-card">
+                                <div class="rule-icon-circle">6</div>
+                                <p>Không lạm dụng hoặc phụ thuộc quá mức vào AI nhằm duy trì năng lực tự học và phát triển tư duy độc lập.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Only the "Ảnh đính kèm" images are rendered as <img> tags -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-paperclip card-icon"></i>
+                        <h3>Ảnh đính kèm minh chứng</h3>
+                    </div>
+                    <div class="card-body attached-media-section">
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <div class="image-wrapper zoom-effect">
+                                    <img src="assets/image19.png" alt="Ảnh đính kèm: Poster AI có trách nhiệm" data-lightbox>
+                                </div>
+                                <p>Ảnh đính kèm: Poster cổ động "Sử dụng AI có trách nhiệm trong học thuật"</p>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image-wrapper zoom-effect">
+                                    <img src="assets/image1.png" alt="Ảnh đính kèm: Quy tắc 3 và 4 hướng dẫn" data-lightbox>
+                                </div>
+                                <p>Ảnh đính kèm: Quy tắc 3 & 4 trích lục hướng dẫn an toàn số</p>
+                            </div>
+                        </div>
+
+                        <div class="drive-link-box">
+                            <div class="drive-text">
+                                <h4>Xem chi tiết thư mục bài làm 6</h4>
+                                <p>Báo cáo đầy đủ về quy tắc liêm chính học thuật và sử dụng AI có trách nhiệm.</p>
+                            </div>
+                            <a href="https://drive.google.com/drive/u/0/folders/1ykd86UovCqO89rjt_KT8KPJTLOB8nNG8" target="_blank" class="btn btn-drive">
+                                <i class="fa-brands fa-google-drive"></i> Thư mục Bài tập 6
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. STEP 3: REFLECTION & CONTACT -->
+            <section id="step3" class="page-section">
+                <div class="page-title-area">
+                    <span class="badge">Bước 3</span>
+                    <h2>Nhìn lại chặng đường & Liên hệ</h2>
+                    <p class="page-desc">Đánh giá quá trình rèn luyện kỹ năng số và thông tin liên hệ chính thức.</p>
+                </div>
+
+                <!-- Bỏ toàn bộ ảnh trong Step 3, chỉ dùng văn bản trình bày đẹp -->
+                <div class="grid-2col">
+                    <!-- Reflection -->
+                    <div class="content-card glow-card">
+                        <div class="card-header">
+                            <i class="fa-solid fa-heart-pulse card-icon pink-glow"></i>
+                            <h3>Nhìn lại bản thân (Reflection)</h3>
+                        </div>
+                        <div class="card-body reflection-body">
+                            <p>“Trong quá trình làm Portfolio, điều khiến em áp lực nhất lúc đầu là làm sao để liên kết tất cả bài tập thành một sản phẩm thống nhất. Vì mỗi bài có yêu cầu khác nhau nên em khá dễ bị rối, phải chỉnh sửa bố cục nhiều lần để Portfolio nhìn gọn gàng và mạch lạc hơn.</p>
+                            <p>Dần dần, em nhận ra đây không chỉ là một bài nộp mà là một quá trình học thật sự. Những việc tưởng nhỏ như quản lý tệp, lưu tài liệu hay ghi nguồn tham khảo lại giúp em hình thành thói quen làm việc có tổ chức và cẩn thận hơn. Em cũng học được cách tìm kiếm thông tin học thuật hiệu quả và biết đánh giá độ tin cậy của nguồn.</p>
+                            <p>Phần em thích nhất là sử dụng AI và viết prompt. Em hiểu rằng muốn AI hỗ trợ tốt thì mình phải đặt câu hỏi rõ ràng, có mục tiêu và biết kiểm tra lại kết quả. Kết thúc dự án, em thấy bản thân tiến bộ hơn cả về kỹ năng số lẫn cách học: chủ động hơn, biết tự đánh giá và cải thiện từng bước. Portfolio vì vậy không chỉ là sản phẩm cuối cùng mà còn là dấu mốc ghi lại quá trình em phát triển.”</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Card styled element instead of image21.png -->
+                    <div class="content-card glow-card">
+                        <div class="card-header">
+                            <i class="fa-solid fa-address-book card-icon green-glow"></i>
+                            <h3>Thông tin liên hệ</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="student-contact-card">
+                                <div class="contact-card-header">
+                                    <div class="contact-card-logo">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="contact-card-title">
+                                        <h4>Nguyễn Chí Tùng</h4>
+                                        <p>UET - VNU Student</p>
+                                    </div>
+                                </div>
+                                <div class="contact-card-details">
+                                    <div class="contact-detail-item">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <div>
+                                            <span>Số điện thoại</span>
+                                            <strong>0384006249</strong>
+                                        </div>
+                                    </div>
+                                    <div class="contact-detail-item">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <div>
+                                            <span>Địa chỉ Email</span>
+                                            <strong>nct312007@gmail.com</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-card-footer">
+                                    <span>Nhập môn Công nghệ số & AI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Contact Form -->
+                <div class="content-card full-width">
+                    <div class="card-header">
+                        <i class="fa-solid fa-envelope-open-text card-icon"></i>
+                        <h3>Gửi phản hồi / Liên hệ trực tuyến</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Họ và tên của bạn</label>
+                                    <input type="text" id="name" required placeholder="Nhập họ tên...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Địa chỉ Email</label>
+                                    <input type="email" id="email" required placeholder="Nhập email...">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Nội dung tin nhắn</label>
+                                <textarea id="message" rows="5" required placeholder="Nhập nội dung tin nhắn hoặc góp ý cho portfolio..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit">
+                                <i class="fa-solid fa-paper-plane"></i> Gửi tin nhắn liên hệ
+                            </button>
+                        </form>
+                        <div id="formFeedback" class="form-feedback hidden"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Lightbox Modal for Image Zooming -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+
+    <!-- Main Logic Script -->
+    <script src="script.js"></script>
+</body>
+</html>
